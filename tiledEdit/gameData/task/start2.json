@@ -1,1 +1,0 @@
-{"trigger":"gameStart","condition":[{"id":1,"type":"good","data":1,"requireId":"gds_xiangzi","requireType":">=","des":"获得一个箱子22"}],"name":"test2","showName":"测试任务2","showDes":"任务测试2"}
