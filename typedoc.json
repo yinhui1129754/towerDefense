@@ -1,0 +1,35 @@
+{
+  "entryPoints": [
+    "./src/utils/enum.ts",
+    "./src/utils/types.ts",
+    "./src/utils/AStar.ts",
+    "F:\\git\\tower-defense\\src\\class\\behaviorTree.ts",
+    "F:\\git\\tower-defense\\src\\class\\bullet.ts",
+    "F:\\git\\tower-defense\\src\\class\\camera.ts",
+    "F:\\git\\tower-defense\\src\\class\\gameMenu.ts",
+    "F:\\git\\tower-defense\\src\\class\\gameText.ts",
+    "F:\\git\\tower-defense\\src\\class\\goods.ts",
+    "F:\\git\\tower-defense\\src\\class\\gun.ts",
+    "F:\\git\\tower-defense\\src\\class\\message.ts",
+    "F:\\git\\tower-defense\\src\\class\\openApi.ts",
+    "F:\\git\\tower-defense\\src\\class\\passive.ts",
+    "F:\\git\\tower-defense\\src\\class\\role.ts",
+    "F:\\git\\tower-defense\\src\\class\\task.ts",
+    "F:\\git\\tower-defense\\src\\class\\tiledmap.ts",
+    "F:\\git\\tower-defense\\src\\class\\gameObject\\base.ts",
+    "F:\\git\\tower-defense\\src\\class\\gameObject\\dumpObject.ts",
+    "F:\\git\\tower-defense\\src\\class\\gameObject\\gameObject.ts",
+    "F:\\git\\tower-defense\\src\\class\\gameObject\\sportBase.ts",
+    "F:\\git\\tower-defense\\src\\gameClass\\processDialog.ts",
+    "F:\\git\\tower-defense\\src\\gameClass\\sceneUtils.ts",
+    "F:\\git\\tower-defense\\src\\gameClass\\spawnEnemies.ts",
+    "F:\\git\\tower-defense\\src\\gameClass\\tower.ts",
+    "F:\\git\\tower-defense\\src\\core\\gameMain.ts",
+    "F:\\git\\tower-defense\\src\\core\\main.ts"
+  ],
+  "out": "doc",
+  "includes": [],
+  "sort": [
+    "source-order"
+  ]
+}

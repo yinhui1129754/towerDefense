@@ -1,0 +1,1 @@
+{"amtLight":16777215,"name":"start","id":"select","tiledMapData":{"version":1,"rect":{"x":0,"y":0,"w":1.7142857142857142,"h":1},"res":{"img":{},"spine":[],"plist":{}},"blocks":[],"fillBlocks":[],"bgColor":"rgba(50,50,50,1)","bgs":[]},"script":{"dataType":1,"data":"scene/script/selectALevel.js"},"sizeType":1}

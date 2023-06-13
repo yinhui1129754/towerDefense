@@ -1,0 +1,153 @@
+
+100061.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ballplayer/hou hat
+  rotate: false
+  xy: 135, 129
+  size: 109, 61
+  orig: 109, 61
+  offset: 0, 0
+  index: -1
+ballplayer/hand2
+  rotate: false
+  xy: 286, 44
+  size: 29, 39
+  orig: 29, 39
+  offset: 0, 0
+  index: -1
+ballplayer/hand222
+  rotate: false
+  xy: 286, 1
+  size: 29, 41
+  orig: 29, 41
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 1, 233
+  size: 55, 20
+  orig: 55, 20
+  offset: 0, 0
+  index: -1
+ballplayer/leg222
+  rotate: false
+  xy: 317, 1
+  size: 27, 37
+  orig: 27, 37
+  offset: 0, 0
+  index: -1
+ballplayer/leg
+  rotate: false
+  xy: 317, 40
+  size: 27, 31
+  orig: 27, 31
+  offset: 0, 0
+  index: -1
+ballplayer/leg2
+  rotate: false
+  xy: 312, 85
+  size: 27, 38
+  orig: 27, 38
+  offset: 0, 0
+  index: -1
+ballplayer/leg111
+  rotate: false
+  xy: 312, 125
+  size: 26, 30
+  orig: 26, 30
+  offset: 0, 0
+  index: -1
+ballplayer/body
+  rotate: false
+  xy: 1, 140
+  size: 63, 91
+  orig: 63, 92
+  offset: 0, 1
+  index: -1
+cloud1
+  rotate: false
+  xy: 164, 237
+  size: 31, 14
+  orig: 37, 17
+  offset: 3, 1
+  index: -1
+cloud3
+  rotate: false
+  xy: 286, 85
+  size: 23, 27
+  orig: 27, 32
+  offset: 3, 3
+  index: -1
+cloud4
+  rotate: false
+  xy: 242, 114
+  size: 17, 13
+  orig: 23, 18
+  offset: 3, 3
+  index: -1
+cloud2
+  rotate: false
+  xy: 272, 225
+  size: 47, 27
+  orig: 52, 32
+  offset: 2, 3
+  index: -1
+ballplayer/majia2
+  rotate: false
+  xy: 272, 114
+  size: 38, 109
+  orig: 38, 109
+  offset: 0, 0
+  index: -1
+ballplayer/majia1
+  rotate: false
+  xy: 242, 1
+  size: 42, 111
+  orig: 42, 111
+  offset: 0, 0
+  index: -1
+ballplayer/hand1
+  rotate: false
+  xy: 97, 140
+  size: 30, 44
+  orig: 30, 44
+  offset: 0, 0
+  index: -1
+ballplayer/yun_1
+  rotate: false
+  xy: 164, 192
+  size: 106, 43
+  orig: 108, 55
+  offset: 0, 11
+  index: -1
+ballplayer/yun_2
+  rotate: false
+  xy: 66, 192
+  size: 96, 53
+  orig: 108, 55
+  offset: 4, 0
+  index: -1
+ballplayer/head
+  rotate: false
+  xy: 135, 1
+  size: 105, 126
+  orig: 105, 126
+  offset: 0, 0
+  index: -1
+ballplayer/hand111
+  rotate: false
+  xy: 66, 140
+  size: 29, 49
+  orig: 29, 49
+  offset: 0, 0
+  index: -1
+ballplayer/hat
+  rotate: false
+  xy: 1, 1
+  size: 132, 137
+  orig: 132, 137
+  offset: 0, 0
+  index: -1

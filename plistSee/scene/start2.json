@@ -1,0 +1,139 @@
+{
+  "amtLight": 16777215,
+  "name": "test",
+  "id": 1,
+ "tiledMapData":{
+  "version": 1,
+  "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 2400,
+    "h": 1728
+  },
+  "blockWidth": 48,
+  "blockHeight": 48,
+  "res": {
+    "img":[],
+    "spine": []
+  },
+  "blocks": [],
+  "fillBlocks": [
+    {
+      "name": "block2",
+      "x": 0,
+      "y": 0,
+      "w": 50,
+      "h": 1,
+      "collsion": 1,
+      "type": 1
+    },
+    {
+      "name": "block2",
+      "x": 0,
+      "y": 1,
+      "w": 1,
+      "h": 34,
+      "collsion": 1,
+      "type": 1
+    },
+    {
+      "name": "block2",
+      "x": 0,
+      "y": 35,
+      "w": 50,
+      "h": 1,
+      "collsion": 1,
+      "type": 1
+    },
+    {
+      "name": "block2",
+      "x": 49,
+      "y": 1,
+      "w": 1,
+      "h": 34,
+      "collsion": 1,
+      "type": 1
+    },
+    {
+      "name": "block1",
+      "x": 1,
+      "y": 20,
+      "w": 48,
+      "h": 3
+    },
+    {
+      "name": "block1",
+      "x": 20,
+      "y": 1,
+      "w": 3,
+      "h": 34
+    },
+    {
+      "name": "grass",
+      "x": 1,
+      "y": 1,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "name": "grass",
+      "x": 1,
+      "y": 1,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "name": "grass",
+      "x": 1,
+      "y": 23,
+      "w": 19,
+      "h": 12
+    },
+    {
+      "name": "grass",
+      "x": 23,
+      "y": 1,
+      "w": 26,
+      "h": 19
+    },
+    {
+      "name": "grass",
+      "x": 23,
+      "y": 23,
+      "w": 26,
+      "h": 12
+    },
+    {
+      "name": "block2",
+      "x": 10,
+      "y": 10,
+      "w": 2,
+      "h": 2,
+      "collsion": 1,
+      "type": 1
+    },
+    {
+      "name": "block2",
+      "x": 14,
+      "y": 10,
+      "w": 2,
+      "h": 2,
+      "collsion": 1,
+      "type": 1
+    },
+    {
+      "name": "block2",
+      "x": 8,
+      "y": 14,
+      "w": 10,
+      "h": 2,
+      "collsion": 1,
+      "type": 1
+    }
+  ],
+  "bgColor": "rgba(255,255,0,1)",
+  "bgs": [
+
+  ]
+ }
+}

@@ -1,0 +1,188 @@
+
+100041.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ballplayer/body
+  rotate: true
+  xy: 315, 50
+  size: 76, 84
+  orig: 76, 84
+  offset: 0, 0
+  index: -1
+ballplayer/eye4
+  rotate: false
+  xy: 346, 20
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+ballplayer/eyes1
+  rotate: false
+  xy: 2, 18
+  size: 83, 27
+  orig: 83, 27
+  offset: 0, 0
+  index: -1
+ballplayer/eyes2
+  rotate: true
+  xy: 112, 41
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+ballplayer/eyes3
+  rotate: false
+  xy: 2, 2
+  size: 75, 14
+  orig: 75, 14
+  offset: 0, 0
+  index: -1
+ballplayer/eyes4
+  rotate: true
+  xy: 456, 45
+  size: 91, 19
+  orig: 91, 19
+  offset: 0, 0
+  index: -1
+ballplayer/hair1
+  rotate: true
+  xy: 145, 173
+  size: 81, 178
+  orig: 81, 178
+  offset: 0, 0
+  index: -1
+ballplayer/hair2
+  rotate: true
+  xy: 325, 174
+  size: 80, 177
+  orig: 80, 177
+  offset: 0, 0
+  index: -1
+ballplayer/hand1
+  rotate: true
+  xy: 246, 33
+  size: 28, 44
+  orig: 28, 44
+  offset: 0, 0
+  index: -1
+ballplayer/hand111
+  rotate: false
+  xy: 87, 15
+  size: 22, 30
+  orig: 22, 30
+  offset: 0, 0
+  index: -1
+ballplayer/hand222
+  rotate: true
+  xy: 192, 5
+  size: 22, 26
+  orig: 22, 26
+  offset: 0, 0
+  index: -1
+ballplayer/head
+  rotate: false
+  xy: 2, 104
+  size: 141, 150
+  orig: 141, 150
+  offset: 0, 0
+  index: -1
+ballplayer/head2
+  rotate: false
+  xy: 145, 63
+  size: 111, 108
+  orig: 111, 108
+  offset: 0, 0
+  index: -1
+ballplayer/head_shang
+  rotate: true
+  xy: 325, 128
+  size: 44, 117
+  orig: 44, 117
+  offset: 0, 0
+  index: -1
+ballplayer/leg
+  rotate: true
+  xy: 111, 15
+  size: 24, 41
+  orig: 24, 41
+  offset: 0, 0
+  index: -1
+ballplayer/leg2
+  rotate: false
+  xy: 173, 12
+  size: 17, 27
+  orig: 17, 27
+  offset: 0, 0
+  index: -1
+ballplayer/love
+  rotate: true
+  xy: 401, 54
+  size: 72, 53
+  orig: 72, 53
+  offset: 0, 0
+  index: -1
+ballplayer/meimao3
+  rotate: true
+  xy: 477, 60
+  size: 76, 21
+  orig: 76, 21
+  offset: 0, 0
+  index: -1
+ballplayer/xingxing
+  rotate: true
+  xy: 444, 138
+  size: 34, 51
+  orig: 34, 51
+  offset: 0, 0
+  index: -1
+ballplayer/yun_1
+  rotate: false
+  xy: 2, 47
+  size: 108, 55
+  orig: 108, 55
+  offset: 0, 0
+  index: -1
+ballplayer/yun_2
+  rotate: true
+  xy: 258, 63
+  size: 108, 55
+  orig: 108, 55
+  offset: 0, 0
+  index: -1
+cloud1
+  rotate: true
+  xy: 154, 2
+  size: 37, 17
+  orig: 37, 17
+  offset: 0, 0
+  index: -1
+cloud2
+  rotate: false
+  xy: 192, 29
+  size: 52, 32
+  orig: 52, 32
+  offset: 0, 0
+  index: -1
+cloud3
+  rotate: true
+  xy: 312, 21
+  size: 27, 32
+  orig: 27, 32
+  offset: 0, 0
+  index: -1
+cloud4
+  rotate: true
+  xy: 292, 38
+  size: 23, 18
+  orig: 23, 18
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 135, 41
+  size: 55, 20
+  orig: 55, 20
+  offset: 0, 0
+  index: -1

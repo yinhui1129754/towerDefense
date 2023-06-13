@@ -1,0 +1,1364 @@
+
+player.png
+size: 968,523
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+111/body
+  rotate: true
+  xy: 573, 100
+  size: 43, 49
+  orig: 67, 61
+  offset: 10, 4
+  index: -1
+111/head
+  rotate: true
+  xy: 2, 93
+  size: 100, 80
+  orig: 121, 137
+  offset: 11, 47
+  index: -1
+111/leg
+  rotate: false
+  xy: 882, 246
+  size: 16, 37
+  orig: 24, 46
+  offset: 4, 3
+  index: -1
+B1
+  rotate: false
+  xy: 292, 67
+  size: 8, 12
+  orig: 21, 20
+  offset: 7, 4
+  index: -1
+BOOM
+  rotate: true
+  xy: 205, 442
+  size: 79, 144
+  orig: 186, 211
+  offset: 86, 35
+  index: -1
+X1
+  rotate: true
+  xy: 769, 327
+  size: 59, 37
+  orig: 74, 54
+  offset: 7, 8
+  index: -1
+X2
+  rotate: false
+  xy: 564, 464
+  size: 97, 57
+  orig: 107, 73
+  offset: 4, 7
+  index: -1
+X3
+  rotate: false
+  xy: 351, 459
+  size: 115, 62
+  orig: 279, 211
+  offset: 92, 51
+  index: -1
+X4
+  rotate: false
+  xy: 2, 323
+  size: 163, 86
+  orig: 279, 211
+  offset: 62, 51
+  index: -1
+X5
+  rotate: false
+  xy: 2, 411
+  size: 201, 110
+  orig: 279, 211
+  offset: 38, 50
+  index: -1
+ballplayer/body
+  rotate: true
+  xy: 713, 144
+  size: 34, 36
+  orig: 43, 39
+  offset: 5, 0
+  index: -1
+ballplayer/head
+  rotate: false
+  xy: 374, 325
+  size: 69, 56
+  orig: 81, 91
+  offset: 6, 20
+  index: -1
+ballplayer/leg
+  rotate: true
+  xy: 939, 251
+  size: 18, 27
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+bandit1/body
+  rotate: false
+  xy: 668, 99
+  size: 35, 35
+  orig: 43, 39
+  offset: 5, 0
+  index: -1
+bandit1/head
+  rotate: false
+  xy: 165, 127
+  size: 62, 66
+  orig: 81, 91
+  offset: 6, 19
+  index: -1
+bandit1/leg
+  rotate: true
+  xy: 807, 50
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 3
+  index: -1
+bandit2/body
+  rotate: false
+  xy: 631, 136
+  size: 39, 37
+  orig: 43, 39
+  offset: 4, 0
+  index: -1
+bandit2/head
+  rotate: false
+  xy: 846, 448
+  size: 79, 73
+  orig: 97, 109
+  offset: 0, 28
+  index: -1
+bandit2/leg
+  rotate: true
+  xy: 907, 186
+  size: 21, 30
+  orig: 22, 42
+  offset: 1, 7
+  index: -1
+bandit3/body
+  rotate: true
+  xy: 157, 2
+  size: 50, 46
+  orig: 67, 61
+  offset: 3, 9
+  index: -1
+bandit3/head
+  rotate: false
+  xy: 571, 261
+  size: 57, 59
+  orig: 81, 91
+  offset: 10, 20
+  index: -1
+bandit3/leg
+  rotate: true
+  xy: 205, 2
+  size: 20, 34
+  orig: 20, 39
+  offset: 0, 5
+  index: -1
+bandit4/body
+  rotate: false
+  xy: 756, 252
+  size: 40, 36
+  orig: 43, 39
+  offset: 0, 0
+  index: -1
+bandit4/head
+  rotate: false
+  xy: 304, 226
+  size: 68, 54
+  orig: 81, 91
+  offset: 3, 20
+  index: -1
+bandit4/leg
+  rotate: true
+  xy: 626, 3
+  size: 18, 31
+  orig: 18, 35
+  offset: 0, 3
+  index: -1
+bandit5/body
+  rotate: true
+  xy: 713, 260
+  size: 36, 41
+  orig: 52, 47
+  offset: 7, 4
+  index: -1
+bandit5/head
+  rotate: false
+  xy: 165, 195
+  size: 61, 51
+  orig: 62, 70
+  offset: 0, 15
+  index: -1
+bandit5/leg
+  rotate: true
+  xy: 883, 81
+  size: 16, 30
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+bandit6/body
+  rotate: true
+  xy: 624, 99
+  size: 35, 42
+  orig: 67, 61
+  offset: 15, 7
+  index: -1
+bandit6/head
+  rotate: true
+  xy: 527, 322
+  size: 58, 57
+  orig: 62, 70
+  offset: 0, 8
+  index: -1
+bandit6/leg
+  rotate: true
+  xy: 595, 2
+  size: 19, 29
+  orig: 24, 46
+  offset: 3, 9
+  index: -1
+basketballer/body
+  rotate: false
+  xy: 705, 99
+  size: 34, 34
+  orig: 43, 39
+  offset: 6, 1
+  index: -1
+basketballer/head
+  rotate: false
+  xy: 707, 334
+  size: 60, 52
+  orig: 81, 91
+  offset: 7, 23
+  index: -1
+basketballer/leg
+  rotate: true
+  xy: 736, 22
+  size: 18, 29
+  orig: 20, 35
+  offset: 0, 4
+  index: -1
+bikini/body
+  rotate: false
+  xy: 630, 218
+  size: 40, 40
+  orig: 56, 51
+  offset: 7, 3
+  index: -1
+bikini/head
+  rotate: true
+  xy: 305, 342
+  size: 79, 67
+  orig: 81, 91
+  offset: 0, 10
+  index: -1
+bikini/leg
+  rotate: true
+  xy: 915, 81
+  size: 16, 29
+  orig: 18, 35
+  offset: 1, 3
+  index: -1
+bitchbAroundBoy/body
+  rotate: true
+  xy: 927, 459
+  size: 62, 39
+  orig: 73, 66
+  offset: 5, 11
+  index: -1
+bitchbAroundBoy/head
+  rotate: false
+  xy: 368, 27
+  size: 63, 58
+  orig: 93, 105
+  offset: 21, 21
+  index: -1
+bitchbAroundBoy/leg
+  rotate: true
+  xy: 892, 287
+  size: 16, 24
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+body
+  rotate: false
+  xy: 891, 99
+  size: 30, 34
+  orig: 65, 59
+  offset: 18, 13
+  index: -1
+boss/body
+  rotate: false
+  xy: 674, 223
+  size: 37, 37
+  orig: 43, 39
+  offset: 3, 0
+  index: -1
+boss/head
+  rotate: false
+  xy: 443, 196
+  size: 66, 61
+  orig: 81, 91
+  offset: 4, 20
+  index: -1
+boss/leg
+  rotate: false
+  xy: 785, 20
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+briefsBoy/body
+  rotate: true
+  xy: 751, 216
+  size: 34, 37
+  orig: 73, 66
+  offset: 20, 12
+  index: -1
+briefsBoy/head
+  rotate: true
+  xy: 575, 200
+  size: 59, 53
+  orig: 81, 91
+  offset: 10, 17
+  index: -1
+briefsBoy/leg
+  rotate: true
+  xy: 883, 62
+  size: 17, 29
+  orig: 24, 46
+  offset: 3, 9
+  index: -1
+bunches/body
+  rotate: false
+  xy: 713, 180
+  size: 35, 38
+  orig: 73, 66
+  offset: 18, 14
+  index: -1
+bunches/head
+  rotate: false
+  xy: 759, 455
+  size: 85, 66
+  orig: 87, 98
+  offset: 1, 6
+  index: -1
+bunches/leg
+  rotate: true
+  xy: 119, 2
+  size: 15, 27
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+cartonMan/body
+  rotate: true
+  xy: 751, 143
+  size: 35, 37
+  orig: 43, 39
+  offset: 5, 1
+  index: -1
+cartonMan/head
+  rotate: false
+  xy: 374, 383
+  size: 70, 74
+  orig: 81, 91
+  offset: 2, 7
+  index: -1
+cartonMan/leg
+  rotate: false
+  xy: 805, 20
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 3
+  index: -1
+cateran/body
+  rotate: true
+  xy: 750, 180
+  size: 34, 37
+  orig: 43, 39
+  offset: 5, 0
+  index: -1
+cateran/head
+  rotate: false
+  xy: 433, 19
+  size: 63, 58
+  orig: 81, 91
+  offset: 5, 20
+  index: -1
+cateran/leg
+  rotate: true
+  xy: 939, 231
+  size: 18, 27
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+childishBoy/body
+  rotate: true
+  xy: 927, 395
+  size: 62, 39
+  orig: 73, 66
+  offset: 5, 11
+  index: -1
+childishBoy/head
+  rotate: true
+  xy: 918, 293
+  size: 54, 45
+  orig: 93, 105
+  offset: 18, 23
+  index: -1
+childishBoy/leg
+  rotate: false
+  xy: 415, 2
+  size: 16, 23
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+childishGirl/body
+  rotate: true
+  xy: 801, 391
+  size: 62, 38
+  orig: 73, 66
+  offset: 5, 11
+  index: -1
+childishGirl/head
+  rotate: false
+  xy: 445, 322
+  size: 80, 58
+  orig: 93, 105
+  offset: 5, 23
+  index: -1
+childishGirl/leg
+  rotate: true
+  xy: 837, 50
+  size: 18, 22
+  orig: 22, 42
+  offset: 2, 8
+  index: -1
+cloud1
+  rotate: true
+  xy: 923, 99
+  size: 34, 16
+  orig: 51, 22
+  offset: 11, 3
+  index: -1
+cloud2
+  rotate: false
+  xy: 645, 307
+  size: 49, 30
+  orig: 75, 40
+  offset: 7, 5
+  index: -1
+cloud3
+  rotate: true
+  xy: 851, 73
+  size: 26, 30
+  orig: 90, 70
+  offset: 18, 29
+  index: -1
+cloud4
+  rotate: true
+  xy: 275, 3
+  size: 19, 15
+  orig: 90, 70
+  offset: 23, 51
+  index: -1
+clown/body
+  rotate: false
+  xy: 790, 212
+  size: 37, 34
+  orig: 43, 39
+  offset: 3, 2
+  index: -1
+clown/head
+  rotate: false
+  xy: 511, 194
+  size: 62, 63
+  orig: 75, 84
+  offset: 6, 20
+  index: -1
+clown/leg
+  rotate: true
+  xy: 885, 25
+  size: 18, 26
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+clownGirl/body
+  rotate: false
+  xy: 741, 107
+  size: 35, 34
+  orig: 52, 47
+  offset: 9, 6
+  index: -1
+clownGirl/head
+  rotate: true
+  xy: 99, 221
+  size: 100, 64
+  orig: 116, 131
+  offset: 6, 42
+  index: -1
+clownGirl/leg
+  rotate: true
+  xy: 88, 2
+  size: 15, 29
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+cook/body
+  rotate: true
+  xy: 866, 135
+  size: 34, 36
+  orig: 52, 47
+  offset: 10, 4
+  index: -1
+cook/head
+  rotate: true
+  xy: 374, 201
+  size: 65, 67
+  orig: 81, 91
+  offset: 2, 20
+  index: -1
+cook/leg
+  rotate: true
+  xy: 561, 382
+  size: 18, 23
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+coolBoy/body
+  rotate: false
+  xy: 659, 16
+  size: 37, 39
+  orig: 73, 66
+  offset: 19, 12
+  index: -1
+coolBoy/head
+  rotate: false
+  xy: 370, 87
+  size: 65, 52
+  orig: 93, 105
+  offset: 9, 24
+  index: -1
+coolBoy/leg
+  rotate: true
+  xy: 562, 2
+  size: 19, 31
+  orig: 24, 46
+  offset: 2, 9
+  index: -1
+cowGirl/body
+  rotate: false
+  xy: 907, 209
+  size: 30, 35
+  orig: 52, 47
+  offset: 11, 5
+  index: -1
+cowGirl/head
+  rotate: true
+  xy: 167, 328
+  size: 81, 59
+  orig: 90, 101
+  offset: 5, 28
+  index: -1
+cowGirl/leg
+  rotate: true
+  xy: 883, 45
+  size: 15, 24
+  orig: 18, 35
+  offset: 2, 4
+  index: -1
+cowboy/body
+  rotate: true
+  xy: 900, 246
+  size: 39, 37
+  orig: 73, 66
+  offset: 16, 12
+  index: -1
+cowboy/head
+  rotate: false
+  xy: 564, 402
+  size: 79, 60
+  orig: 93, 105
+  offset: 9, 24
+  index: -1
+cowboy/leg
+  rotate: true
+  xy: 569, 79
+  size: 19, 29
+  orig: 24, 46
+  offset: 2, 9
+  index: -1
+dead
+  rotate: false
+  xy: 440, 198
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+doctor/body
+  rotate: true
+  xy: 764, 290
+  size: 35, 41
+  orig: 56, 51
+  offset: 10, 3
+  index: -1
+doctor/head
+  rotate: false
+  xy: 292, 2
+  size: 62, 51
+  orig: 62, 70
+  offset: 0, 8
+  index: -1
+doctor/leg
+  rotate: true
+  xy: 892, 305
+  size: 18, 24
+  orig: 24, 46
+  offset: 3, 9
+  index: -1
+gasMask/body
+  rotate: true
+  xy: 674, 262
+  size: 43, 37
+  orig: 52, 47
+  offset: 0, 8
+  index: -1
+gasMask/head
+  rotate: false
+  xy: 304, 282
+  size: 68, 58
+  orig: 81, 91
+  offset: 6, 21
+  index: -1
+gasMask/leg
+  rotate: false
+  xy: 351, 425
+  size: 21, 32
+  orig: 22, 42
+  offset: 0, 7
+  index: -1
+gunman/body
+  rotate: true
+  xy: 631, 175
+  size: 41, 39
+  orig: 52, 47
+  offset: 4, 1
+  index: -1
+gunman/head
+  rotate: false
+  xy: 437, 79
+  size: 65, 59
+  orig: 81, 91
+  offset: 7, 20
+  index: -1
+gunman/leg
+  rotate: false
+  xy: 946, 79
+  size: 18, 26
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+gyrene/body
+  rotate: false
+  xy: 618, 59
+  size: 39, 38
+  orig: 43, 39
+  offset: 3, 1
+  index: -1
+gyrene/head
+  rotate: false
+  xy: 645, 398
+  size: 77, 64
+  orig: 97, 109
+  offset: 5, 27
+  index: -1
+gyrene/leg
+  rotate: false
+  xy: 825, 20
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+halve/body
+  rotate: false
+  xy: 713, 220
+  size: 36, 38
+  orig: 48, 43
+  offset: 7, 0
+  index: -1
+halve/head
+  rotate: false
+  xy: 508, 138
+  size: 63, 54
+  orig: 81, 91
+  offset: 8, 21
+  index: -1
+halve/leg
+  rotate: true
+  xy: 939, 211
+  size: 18, 27
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+head
+  rotate: true
+  xy: 870, 325
+  size: 53, 46
+  orig: 124, 140
+  offset: 35, 49
+  index: -1
+importantOfficial/body
+  rotate: false
+  xy: 850, 285
+  size: 40, 38
+  orig: 56, 51
+  offset: 10, 4
+  index: -1
+importantOfficial/head
+  rotate: false
+  xy: 99, 159
+  size: 64, 60
+  orig: 81, 91
+  offset: 3, 19
+  index: -1
+importantOfficial/leg
+  rotate: true
+  xy: 939, 271
+  size: 20, 27
+  orig: 21, 36
+  offset: 0, 3
+  index: -1
+jiaxue
+  rotate: false
+  xy: 2, 6
+  size: 84, 85
+  orig: 186, 211
+  offset: 53, 69
+  index: -1
+jiaxue2
+  rotate: false
+  xy: 562, 23
+  size: 54, 54
+  orig: 66, 68
+  offset: 6, 7
+  index: -1
+jx
+  rotate: true
+  xy: 696, 307
+  size: 25, 22
+  orig: 26, 25
+  offset: 0, 2
+  index: -1
+leg
+  rotate: true
+  xy: 462, 2
+  size: 15, 25
+  orig: 24, 46
+  offset: 5, 10
+  index: -1
+locomotiveParty1/body
+  rotate: true
+  xy: 798, 248
+  size: 36, 40
+  orig: 53, 48
+  offset: 9, 1
+  index: -1
+locomotiveParty1/head
+  rotate: false
+  xy: 645, 339
+  size: 60, 57
+  orig: 81, 91
+  offset: 9, 18
+  index: -1
+locomotiveParty1/leg
+  rotate: false
+  xy: 944, 51
+  size: 18, 26
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+locomotiveParty2/body
+  rotate: false
+  xy: 790, 142
+  size: 35, 36
+  orig: 43, 39
+  offset: 5, 0
+  index: -1
+locomotiveParty2/head
+  rotate: false
+  xy: 498, 15
+  size: 62, 62
+  orig: 81, 91
+  offset: 8, 18
+  index: -1
+locomotiveParty2/leg
+  rotate: false
+  xy: 845, 20
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+police/leg
+  rotate: false
+  xy: 845, 20
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+marilyn/body
+  rotate: true
+  xy: 778, 107
+  size: 33, 35
+  orig: 73, 66
+  offset: 20, 15
+  index: -1
+marilyn/head
+  rotate: true
+  xy: 165, 248
+  size: 73, 61
+  orig: 93, 105
+  offset: 5, 21
+  index: -1
+marilyn/leg
+  rotate: true
+  xy: 843, 2
+  size: 16, 26
+  orig: 22, 42
+  offset: 3, 8
+  index: -1
+menInBlack/body
+  rotate: true
+  xy: 840, 246
+  size: 37, 40
+  orig: 73, 66
+  offset: 19, 11
+  index: -1
+menInBlack/head
+  rotate: false
+  xy: 374, 268
+  size: 69, 55
+  orig: 81, 91
+  offset: 5, 16
+  index: -1
+menInBlack/leg
+  rotate: false
+  xy: 865, 20
+  size: 18, 23
+  orig: 22, 42
+  offset: 2, 7
+  index: -1
+monophthalmia/body
+  rotate: false
+  xy: 918, 349
+  size: 48, 44
+  orig: 73, 66
+  offset: 9, 7
+  index: -1
+monophthalmia/head
+  rotate: false
+  xy: 504, 79
+  size: 63, 57
+  orig: 81, 91
+  offset: 6, 14
+  index: -1
+monophthalmia/leg
+  rotate: true
+  xy: 241, 2
+  size: 20, 32
+  orig: 22, 42
+  offset: 1, 7
+  index: -1
+nun/body
+  rotate: true
+  xy: 814, 70
+  size: 29, 35
+  orig: 73, 66
+  offset: 21, 16
+  index: -1
+nun/head
+  rotate: false
+  xy: 372, 141
+  size: 66, 58
+  orig: 81, 91
+  offset: 4, 12
+  index: -1
+nun/leg
+  rotate: false
+  xy: 84, 168
+  size: 13, 25
+  orig: 18, 35
+  offset: 2, 5
+  index: -1
+nurse/body
+  rotate: true
+  xy: 815, 101
+  size: 32, 36
+  orig: 43, 39
+  offset: 5, 0
+  index: -1
+nurse/head
+  rotate: false
+  xy: 228, 278
+  size: 74, 65
+  orig: 81, 91
+  offset: 3, 19
+  index: -1
+nurse/leg
+  rotate: true
+  xy: 785, 2
+  size: 16, 27
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+pipe/body
+  rotate: true
+  xy: 853, 101
+  size: 32, 36
+  orig: 43, 39
+  offset: 6, 0
+  index: -1
+pipe/head
+  rotate: true
+  xy: 157, 54
+  size: 71, 62
+  orig: 81, 91
+  offset: 8, 14
+  index: -1
+pipe/leg
+  rotate: true
+  xy: 939, 172
+  size: 17, 27
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+plainClothesMan/body
+  rotate: true
+  xy: 807, 286
+  size: 37, 41
+  orig: 73, 66
+  offset: 18, 9
+  index: -1
+plainClothesMan/head
+  rotate: false
+  xy: 229, 81
+  size: 71, 62
+  orig: 81, 91
+  offset: 10, 17
+  index: -1
+plainClothesMan/leg
+  rotate: true
+  xy: 529, 382
+  size: 20, 30
+  orig: 24, 46
+  offset: 2, 9
+  index: -1
+playgirl/body
+  rotate: true
+  xy: 659, 57
+  size: 40, 36
+  orig: 65, 59
+  offset: 11, 11
+  index: -1
+playgirl/head
+  rotate: false
+  xy: 228, 345
+  size: 75, 76
+  orig: 124, 140
+  offset: 25, 29
+  index: -1
+playgirl/leg
+  rotate: false
+  xy: 913, 2
+  size: 17, 27
+  orig: 24, 46
+  offset: 3, 9
+  index: -1
+police/body
+  rotate: false
+  xy: 630, 260
+  size: 42, 45
+  orig: 62, 56
+  offset: 8, 0
+  index: -1
+police/head
+  rotate: true
+  xy: 88, 19
+  size: 72, 67
+  orig: 81, 91
+  offset: 2, 17
+  index: -1
+policewoman/body
+  rotate: false
+  xy: 904, 135
+  size: 35, 34
+  orig: 43, 39
+  offset: 0, 2
+  index: -1
+policewoman/head
+  rotate: true
+  xy: 586, 338
+  size: 62, 57
+  orig: 75, 84
+  offset: 6, 20
+  index: -1
+policewoman/leg
+  rotate: true
+  xy: 433, 2
+  size: 15, 27
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+president/body
+  rotate: true
+  xy: 697, 58
+  size: 39, 37
+  orig: 48, 43
+  offset: 6, 1
+  index: -1
+president/head
+  rotate: false
+  xy: 440, 140
+  size: 66, 54
+  orig: 81, 91
+  offset: 4, 20
+  index: -1
+president/leg
+  rotate: true
+  xy: 914, 61
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 3
+  index: -1
+prisoner/body
+  rotate: false
+  xy: 698, 17
+  size: 36, 39
+  orig: 73, 66
+  offset: 20, 11
+  index: -1
+prisoner/head
+  rotate: false
+  xy: 808, 325
+  size: 60, 53
+  orig: 93, 105
+  offset: 14, 21
+  index: -1
+prisoner/leg
+  rotate: false
+  xy: 913, 31
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+regimentalPolice/body
+  rotate: false
+  xy: 672, 184
+  size: 39, 37
+  orig: 43, 39
+  offset: 3, 0
+  index: -1
+regimentalPolice/head
+  rotate: false
+  xy: 84, 93
+  size: 66, 64
+  orig: 81, 91
+  offset: 5, 18
+  index: -1
+regimentalPolice/leg
+  rotate: true
+  xy: 933, 31
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+runningDeadBoy1/body
+  rotate: false
+  xy: 618, 23
+  size: 39, 34
+  orig: 73, 66
+  offset: 17, 17
+  index: -1
+runningDeadBoy1/head
+  rotate: true
+  xy: 520, 259
+  size: 61, 49
+  orig: 87, 98
+  offset: 13, 21
+  index: -1
+runningDeadBoy1/leg
+  rotate: false
+  xy: 941, 139
+  size: 18, 31
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+runningDeadBoy2/body
+  rotate: false
+  xy: 829, 210
+  size: 37, 34
+  orig: 73, 66
+  offset: 18, 17
+  index: -1
+runningDeadBoy2/head
+  rotate: false
+  xy: 221, 24
+  size: 69, 55
+  orig: 81, 91
+  offset: 8, 17
+  index: -1
+runningDeadBoy2/leg
+  rotate: false
+  xy: 941, 107
+  size: 18, 30
+  orig: 18, 35
+  offset: 0, 5
+  index: -1
+runningDeadGirl1/body
+  rotate: false
+  xy: 868, 208
+  size: 37, 36
+  orig: 52, 47
+  offset: 9, 4
+  index: -1
+runningDeadGirl1/head
+  rotate: false
+  xy: 446, 382
+  size: 81, 59
+  orig: 81, 91
+  offset: 0, 24
+  index: -1
+runningDeadGirl1/leg
+  rotate: true
+  xy: 736, 2
+  size: 18, 29
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+runningDeadGirl2/body
+  rotate: false
+  xy: 672, 147
+  size: 39, 35
+  orig: 43, 39
+  offset: 2, 1
+  index: -1
+runningDeadGirl2/head
+  rotate: false
+  xy: 302, 108
+  size: 66, 60
+  orig: 75, 84
+  offset: 5, 20
+  index: -1
+runningDeadGirl2/leg
+  rotate: false
+  xy: 736, 42
+  size: 18, 30
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+shadow
+  rotate: false
+  xy: 356, 2
+  size: 57, 23
+  orig: 62, 31
+  offset: 2, 3
+  index: -1
+soldier/body
+  rotate: false
+  xy: 827, 171
+  size: 37, 37
+  orig: 52, 47
+  offset: 9, 3
+  index: -1
+soldier/head
+  rotate: false
+  xy: 303, 170
+  size: 67, 54
+  orig: 81, 91
+  offset: 6, 22
+  index: -1
+soldier/leg
+  rotate: true
+  xy: 776, 50
+  size: 18, 29
+  orig: 18, 35
+  offset: 0, 4
+  index: -1
+student/body
+  rotate: false
+  xy: 866, 171
+  size: 37, 35
+  orig: 43, 39
+  offset: 3, 1
+  index: -1
+student/head
+  rotate: false
+  xy: 302, 55
+  size: 64, 51
+  orig: 81, 91
+  offset: 7, 23
+  index: -1
+student/leg
+  rotate: false
+  xy: 865, 45
+  size: 16, 26
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+swimsuitGirl/body
+  rotate: true
+  xy: 741, 74
+  size: 31, 36
+  orig: 73, 66
+  offset: 21, 14
+  index: -1
+swimsuitGirl/head
+  rotate: true
+  xy: 724, 388
+  size: 65, 75
+  orig: 93, 105
+  offset: 14, 18
+  index: -1
+swimsuitGirl/leg
+  rotate: false
+  xy: 767, 10
+  size: 16, 30
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+takeOutBoy/body
+  rotate: true
+  xy: 529, 404
+  size: 37, 33
+  orig: 43, 39
+  offset: 3, 3
+  index: -1
+takeOutBoy/head
+  rotate: false
+  xy: 841, 380
+  size: 75, 66
+  orig: 81, 91
+  offset: 3, 20
+  index: -1
+takeOutBoy/leg
+  rotate: false
+  xy: 756, 42
+  size: 18, 30
+  orig: 18, 35
+  offset: 0, 3
+  index: -1
+theGirlNextDoor/body
+  rotate: true
+  xy: 789, 180
+  size: 30, 36
+  orig: 43, 39
+  offset: 8, 0
+  index: -1
+theGirlNextDoor/head
+  rotate: false
+  xy: 445, 259
+  size: 73, 61
+  orig: 81, 91
+  offset: 4, 20
+  index: -1
+theGirlNextDoor/leg
+  rotate: true
+  xy: 814, 2
+  size: 16, 27
+  orig: 18, 35
+  offset: 1, 4
+  index: -1
+up
+  rotate: false
+  xy: 468, 443
+  size: 94, 78
+  orig: 186, 211
+  offset: 45, 5
+  index: -1
+up2
+  rotate: false
+  xy: 663, 464
+  size: 94, 57
+  orig: 186, 211
+  offset: 45, 5
+  index: -1
+up3
+  rotate: true
+  xy: 205, 423
+  size: 17, 141
+  orig: 186, 211
+  offset: 80, 38
+  index: -1
+up4
+  rotate: false
+  xy: 2, 195
+  size: 95, 126
+  orig: 186, 211
+  offset: 45, 5
+  index: -1
+whiteCollarWorker/body
+  rotate: true
+  xy: 827, 135
+  size: 34, 37
+  orig: 73, 66
+  offset: 19, 12
+  index: -1
+whiteCollarWorker/head
+  rotate: false
+  xy: 228, 214
+  size: 73, 62
+  orig: 93, 105
+  offset: 12, 21
+  index: -1
+whiteCollarWorker/leg
+  rotate: true
+  xy: 871, 2
+  size: 16, 24
+  orig: 22, 42
+  offset: 3, 8
+  index: -1
+wildCurlUp/body
+  rotate: true
+  xy: 779, 70
+  size: 35, 33
+  orig: 43, 39
+  offset: 5, 2
+  index: -1
+wildCurlUp/head
+  rotate: false
+  xy: 229, 145
+  size: 71, 67
+  orig: 81, 91
+  offset: 4, 19
+  index: -1
+wildCurlUp/leg
+  rotate: true
+  xy: 939, 191
+  size: 18, 27
+  orig: 18, 35
+  offset: 0, 3
+  index: -1
+wrestler/body
+  rotate: false
+  xy: 720, 298
+  size: 42, 34
+  orig: 43, 39
+  offset: 0, 1
+  index: -1
+wrestler/head
+  rotate: false
+  xy: 575, 145
+  size: 54, 53
+  orig: 81, 91
+  offset: 12, 23
+  index: -1
+wrestler/leg
+  rotate: true
+  xy: 932, 11
+  size: 18, 28
+  orig: 18, 35
+  offset: 0, 4
+  index: -1

@@ -1,0 +1,93 @@
+{
+
+    "menu":{
+        "eq":{
+            "name":"装备"
+        },
+        "attr":{
+            "name":"属性",
+            "ph":"生命:{{PH}}/{{maxPH}}",
+            "mp":"魔法:{{MP}}/{{maxMP}}",
+            "sp":"体力:{{SP}}/{{maxSP}}",
+            "eq":"装备"
+        },
+        "task":{
+            "name":"任务"
+        },
+        "system":{
+            "name":"系统",
+            "save":"保存游戏",
+            "read":"读取游戏",
+            "sound":"声音:",
+            "quit":"退出游戏"
+        },
+        "map":{
+            "name":"地图"
+        }
+    },
+    "roles":{
+        "equipent":{
+            "qt":"枪头",
+            "hj":"护甲",
+            "mzj":"瞄准镜",
+            "xz":"鞋子"
+        },
+        "eqGun":"枪械"
+    },
+    "goods":{
+        "gds_xiangzi":{
+            "showName":"宝箱",
+            "showDes":"可以开出一些初级装备或者金币"
+        },
+        "gds_qiangtou_1":{
+            "showName": "枪头",
+            "showDes": "增加属性：\n{{passiveDes}}"
+        },
+        "gds_hujia_1":{
+            "showName": "护甲",
+            "showDes": "增加属性：\n{{passiveDes}}"
+        },
+        "gds_xiezi_1":{
+            "showName": "鞋子",
+            "showDes": "增加属性：\n{{passiveDes}}"
+        },
+        "gds_miaozhunjing_1":{
+            "showName": "瞄准镜",
+            "showDes": "增加属性：\n{{passiveDes}}"
+        },
+        "gds_penzi_1":{
+            "showName": "喷子",
+            "showDes": "增加属性：\n{{passiveDes}} \n攻击间隔:1000"
+        },
+        "gds_jiguangqiang_1":{
+            "showName": "激光枪",
+            "showDes": "增加属性：\n{{passiveDes}} \n攻击间隔:300"
+        },
+        "gds_liudanqiang_1":{
+            "showName": "榴弹枪",
+            "showDes": "增加属性：\n{{passiveDes}} \n攻击间隔:1500"
+        },
+        "gds_tujibuqiang_1":{
+            "showName": "ak-47",
+            "showDes": "增加属性：\n{{passiveDes}} \n攻击间隔:500"
+        },
+        "gds_jujiqiang_1":{
+            "showName": "狙击枪",
+            "showDes": "增加属性：\n{{passiveDes}} \n攻击间隔:1200"
+        },
+        "gds_shouqiang_1":{
+            "showName": "手枪",
+            "showDes": "增加属性：\n{{passiveDes}} \n攻击间隔:600"
+        }
+    },
+    "sure":"确认",
+    "cancel":"取消",
+    "passive":{
+        "MaxPHPassive":"最大生命值增加+({{value}})",
+        "MaxMPPassive":"最大法力值增加+({{value}})",
+        "MaxSpeedPassive":"最大速度增加+({{value}})",
+        "HurtPassive":"伤害增加+({{value}})",
+        "DefensePassive":"防御力增加+({{value}})",
+        "HurtDistancePassive":"攻击距离+({{value}})"
+    }
+}

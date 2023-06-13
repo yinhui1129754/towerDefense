@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <label>名称：</label><input type="name" placeholder="请输入名称" onchange="changeName(event,'name')">
+        </div>
+        <div>
+            <label>图片文件：</label><input type="file" placeholder="请选择图片文件" onchange="changeCall(event,'img')">
+        </div>
+        <div>
+            <label>json文件：</label><input type="file" placeholder="请选择json文件" onchange="changeCall(event,'data')">
+        </div>
+        <div>
+            <label>atlas文件：</label> <input type="file" placeholder="请选择atlas文件" onchange="changeCall(event,'atlas')">
+        </div>
+
+        <button onclick="download()">下载</button>
+        <script>
+            var data = {
+                dataType:1,
+                name:"",
+                data:"",
+                img:"",
+                atlas:"",
+            }
+            function changeCall(e,key){
+                var t = e.target
+                var fr = new FileReader()
+                fr.readAsDataURL(t.files[0])
+                fr.onload= function(){
+                    data[key] = fr.result
+                }
+            }
+            function changeName(e,name){
+                data.name = e.target.value
+            }
+            function download(){
+                var b = new Blob([JSON.stringify(data,2,2)])
+                var url = URL.createObjectURL(b)
+                var a = document.createElement("a")
+                a.setAttribute("href",url)
+                a.setAttribute("download",data.name+".json")
+                a.click()
+            }
+        </script>
+    </body>
+</html>

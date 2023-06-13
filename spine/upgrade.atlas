@@ -1,0 +1,54 @@
+upgrade.png
+size: 512,512
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+jiaxue2
+  rotate: false
+  xy: 226, 168
+  size: 105, 105
+  orig: 131, 135
+  offset: 13, 15
+  index: -1
+up
+  rotate: false
+  xy: 280, 2
+  size: 188, 164
+  orig: 372, 422
+  offset: 90, 11
+  index: -1
+jiaxue
+  rotate: false
+  xy: 333, 168
+  size: 172, 172
+  orig: 372, 422
+  offset: 103, 137
+  index: -1
+up2
+  rotate: false
+  xy: 36, 168
+  size: 188, 120
+  orig: 372, 422
+  offset: 90, 11
+  index: -1
+up3
+  rotate: false
+  xy: 2, 2
+  size: 32, 300
+  orig: 372, 422
+  offset: 161, 61
+  index: -1
+up4
+  rotate: true
+  xy: 2, 304
+  size: 188, 276
+  orig: 372, 422
+  offset: 91, 0
+  index: -1
+up5
+  rotate: false
+  xy: 280, 342
+  size: 188, 72
+  orig: 372, 422
+  offset: 90, 11
+  index: -1

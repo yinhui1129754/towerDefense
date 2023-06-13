@@ -1,0 +1,448 @@
+{
+    "effects":{
+        "update": {
+            "type": 2,
+            "buffstr": "upgrade",
+            "viewSkin": "default",
+            "amtName": "upgrade",
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "pivotX":0,
+            "pivotY":-30
+          },
+        "csm": {
+            "speed": 0.1, 
+            "buffstr": "plist_info_56840030${num}.png", 
+            "type": 1,
+            "start": 0, 
+            "end": 6, 
+            "playIndex": 0,
+            "scaleX": 1, 
+            "scaleY": 1, 
+            "viewType": 5 ,
+            "loop":true
+        },
+        "csm2": {
+            "speed": 0.1, 
+            "buffstr": "plist_csm2_csm2_${num}.png", 
+            "type": 1,
+            "start": 0, 
+            "end": 19, 
+            "playIndex": 0,
+            "scaleX": 1, 
+            "scaleY": 1, 
+            "viewType": 5 ,
+            "loop":true
+        }
+    },
+    "res": {
+        "plist": {
+            "info": {
+              "dataType": 1, 
+              "data": "plist/info.plist" 
+            },
+            "csm2": {
+                "dataType": 1, 
+                "data": "plist/csm2.plist" 
+              }
+        },
+        "img": {
+            "icon_delete":{
+                "dataType": 1,
+                "data": "img/icon/delete.png"
+            },
+            "icon_move":{
+                "dataType": 1,
+                "data": "img/icon/move.png"
+            },
+            "icon_update":{
+                "dataType": 1,
+                "data": "img/icon/update.png"
+            },
+            "roadTexture_01": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_01.png"
+            },
+            "roadTexture_02": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_02.png"
+            },
+            "roadTexture_03": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_03.png"
+            },
+            "roadTexture_04": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_04.png"
+            },
+            "roadTexture_05": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_05.png"
+            },
+            "roadTexture_06": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_06.png"
+            },
+            "roadTexture_07": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_07.png"
+            },
+            "roadTexture_08": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_08.png"
+            },
+            "roadTexture_09": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_09.png"
+            },
+            "roadTexture_10": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_10.png"
+            },
+            "roadTexture_11": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_11.png"
+            },
+            "roadTexture_12": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_12.png"
+            },
+            "roadTexture_13": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_13.png"
+            },
+            "roadTexture_14": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_14.png"
+            },
+            "roadTexture_15": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_15.png"
+            },
+            "roadTexture_16": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_16.png"
+            },
+            "roadTexture_17": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_17.png"
+            },
+            "roadTexture_18": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_18.png"
+            },
+            "roadTexture_19": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_19.png"
+            },
+            "roadTexture_20": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_20.png"
+            },
+            "roadTexture_21": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_21.png"
+            },
+            "roadTexture_22": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_22.png"
+            },
+            "roadTexture_23": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_23.png"
+            },
+            "roadTexture_24": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_24.png"
+            },
+            "roadTexture_25": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_25.png"
+            },
+            "roadTexture_26": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_26.png"
+            },
+            "roadTexture_27": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_27.png"
+            },
+            "roadTexture_28": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_28.png"
+            },
+            "roadTexture_29": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_29.png"
+            },
+            "roadTexture_30": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_30.png"
+            },
+            "roadTexture_31": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_31.png"
+            },
+            "roadTexture_32": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_32.png"
+            },
+            "roadTexture_33": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_33.png"
+            },
+            "roadTexture_34": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_34.png"
+            },
+            "roadTexture_35": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_35.png"
+            },
+            "roadTexture_36": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_36.png"
+            },
+            "roadTexture_37": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_37.png"
+            },
+            "roadTexture_38": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_38.png"
+            },
+            "roadTexture_39": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_39.png"
+            },
+            "roadTexture_40": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_40.png"
+            },
+            "roadTexture_41": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_41.png"
+            },
+            "roadTexture_42": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_42.png"
+            },
+            "roadTexture_43": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_43.png"
+            },
+            "roadTexture_44": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_44.png"
+            },
+            "roadTexture_45": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_45.png"
+            },
+            "roadTexture_46": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_46.png"
+            },
+            "roadTexture_47": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_47.png"
+            },
+            "roadTexture_48": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_48.png"
+            },
+            "roadTexture_49": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_49.png"
+            },
+            "roadTexture_50": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_50.png"
+            },
+            "roadTexture_51": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_51.png"
+            },
+            "roadTexture_52": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_52.png"
+            },
+            "roadTexture_53": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_53.png"
+            },
+            "roadTexture_54": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_54.png"
+            },
+            "roadTexture_55": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_55.png"
+            },
+            "roadTexture_56": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_56.png"
+            },
+            "roadTexture_57": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_57.png"
+            },
+            "roadTexture_58": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_58.png"
+            },
+            "roadTexture_59": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_59.png"
+            },
+            "roadTexture_60": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_60.png"
+            },
+            "roadTexture_61": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_61.png"
+            },
+            "roadTexture_62": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_62.png"
+            },
+            "roadTexture_63": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_63.png"
+            },
+            "roadTexture_64": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_64.png"
+            },
+            "roadTexture_65": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_65.png"
+            },
+            "roadTexture_66": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_66.png"
+            },
+            "roadTexture_67": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_67.png"
+            },
+            "roadTexture_68": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_68.png"
+            },
+            "roadTexture_69": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_69.png"
+            },
+            "roadTexture_70": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_70.png"
+            },
+            "roadTexture_71": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_71.png"
+            },
+            "roadTexture_72": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_72.png"
+            },
+            "roadTexture_73": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_73.png"
+            },
+            "roadTexture_74": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_74.png"
+            },
+            "roadTexture_75": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_75.png"
+            },
+            "roadTexture_76": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_76.png"
+            },
+            "roadTexture_77": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_77.png"
+            },
+            "roadTexture_78": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_78.png"
+            },
+            "roadTexture_79": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_79.png"
+            },
+            "roadTexture_80": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_80.png"
+            },
+            "roadTexture_81": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_81.png"
+            },
+            "roadTexture_82": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_82.png"
+            },
+            "roadTexture_83": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_83.png"
+            },
+            "roadTexture_84": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_84.png"
+            },
+            "roadTexture_85": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_85.png"
+            },
+            "roadTexture_86": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_86.png"
+            },
+            "roadTexture_87": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_87.png"
+            },
+            "roadTexture_88": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_88.png"
+            },
+            "roadTexture_89": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_89.png"
+            },
+            "roadTexture_90": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_90.png"
+            },
+            "roadTexture_91": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_91.png"
+            },
+            "roadTexture_92": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_92.png"
+            },
+            "roadTexture_93": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_93.png"
+            },
+            "roadTexture_94": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_94.png"
+            },
+            "roadTexture_95": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_95.png"
+            },
+            "roadTexture_96": {
+                "dataType": 1,
+                "data": "img/Retina/roadTexture_96.png"
+            }
+        }
+    }
+}

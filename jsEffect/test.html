@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>canvas粒子文字-jq22.com</title>
+        <style>
+            html {
+              width: 100%;
+              height: 100%;
+              background: #020302;
+              overflow: hidden;
+            }
+            
+            body {
+              margin: 0;
+              width: 100%;
+              height: 100%;
+            }
+/*             
+            #canvas {
+              width: 100%;
+              height: 100%;
+            } */
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <script>
+            function getTextTexture(text, fontSize) {
+                var canvasEl = document.createElement("canvas");
+                var context = canvasEl.getContext('2d');
+                context.fillStyle = '#FFFFFF';
+                context.textAlign = 'left';
+                context.textBaseline = 'top';
+                context.font = "bold " + fontSize + "px Arial";
+                var width = context.measureText(text).width;
+                canvasEl.width = width
+                canvasEl.height = fontSize
+                var context = canvasEl.getContext('2d');
+                context.fillStyle = '#FFFFFF';
+                context.textAlign = 'left';
+                context.textBaseline = 'top';
+                context.font = "bold " + fontSize + "px Arial";
+                context.fillText(text, 0, 0);
+                
+                return context.getImageData(0, 0, width, fontSize);
+            }
+            function getPosition(texture) {
+                var BLOCK_SIZE = 10;
+                var BYTE_OFFSET = 4;
+                var result = [];
+                for (var i = 0; i < texture.width / BLOCK_SIZE; i++) {
+                    for (var j = 0; j < texture.height / BLOCK_SIZE; j++) {
+                        var offset = Math.floor(j * BLOCK_SIZE * texture.width + i * BLOCK_SIZE + BLOCK_SIZE / 2) * BYTE_OFFSET;
+                        if (texture.data[offset]) {
+                        result.push({
+                            x: i * BLOCK_SIZE ,
+                            y: j * BLOCK_SIZE });
+
+                        }
+                    }
+                };
+                return result;
+            }
+
+            var texture = getTextTexture("阻止传送",160)
+            var positions = getPosition(texture);
+            var cvs = document.getElementById("canvas")
+            cvs.width = texture.width
+            cvs.height = texture.height
+            var ctx = cvs.getContext("2d")
+            for(var i in positions){
+                ctx.save();
+                // context.translate(particle.x, particle.y);
+                ctx.beginPath();
+                
+                ctx.fillStyle = "rgba(255,255,0,1)"
+                ctx.arc(positions[i].x, positions[i].y,5,0,2*Math.PI)
+                // ctx.arc(positions[i].x, positions[i].y, 10, 10);
+                ctx.fill();
+                ctx.stroke();
+                ctx.restore();
+            }
+            console.log(positions)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+boomEffect.png
+size: 512,512
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+h2
+  rotate: false
+  xy: 376, 250
+  size: 78, 59
+  orig: 78, 59
+  offset: 0, 0
+  index: -1
+h3
+  rotate: false
+  xy: 376, 167
+  size: 105, 81
+  orig: 105, 81
+  offset: 0, 0
+  index: -1
+h4
+  rotate: false
+  xy: 191, 2
+  size: 187, 114
+  orig: 187, 114
+  offset: 0, 0
+  index: -1
+h5
+  rotate: false
+  xy: 2, 2
+  size: 187, 115
+  orig: 187, 117
+  offset: 0, 2
+  index: -1
+h6
+  rotate: true
+  xy: 380, 2
+  size: 163, 128
+  orig: 163, 130
+  offset: 0, 0
+  index: -1
+h7
+  rotate: false
+  xy: 191, 118
+  size: 183, 135
+  orig: 183, 135
+  offset: 0, 0
+  index: -1
+h10
+  rotate: false
+  xy: 2, 119
+  size: 182, 165
+  orig: 182, 165
+  offset: 0, 0
+  index: -1
+h8
+  rotate: false
+  xy: 186, 255
+  size: 160, 146
+  orig: 160, 146
+  offset: 0, 0
+  index: -1
+h9
+  rotate: true
+  xy: 348, 311
+  size: 141, 144
+  orig: 143, 144
+  offset: 1, 0
+  index: -1

@@ -1,0 +1,294 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>canvas粒子文字-jq22.com</title>
+<style>
+html {
+  width: 100%;
+  height: 100%;
+  background: #020302;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<script>
+"use strict";
+var __extends = this && this.__extends || function () {
+  var extendStatics = function (d, b) {
+    extendStatics = Object.setPrototypeOf ||
+    { __proto__: [] } instanceof Array && function (d, b) {d.__proto__ = b;} ||
+    function (d, b) {for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];};
+    return extendStatics(d, b);
+  };
+  return function (d, b) {
+    extendStatics(d, b);
+    function __() {this.constructor = d;}
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var BACKGROUND_COLORS = ['#020302', '#202620'];
+var _a = [Math.PI * 2, Math.PI / 2, Math.PI / 4],PI_DOUBLE = _a[0],PI_HALF = _a[1],PI_QUARTER = _a[2];
+var COLOR_MAX = 255;
+var BASE_COLOR = [.7, .9, .7];
+var WORDS = ['\u2764', '阻止传送', 'WORLD', 'STAY', 'HOME', 'BE', 'SAFE'];
+var getRGB = function (_a) {
+  var red = _a[0],green = _a[1],blue = _a[2];
+  return "rgb(" + Math.floor(red * COLOR_MAX) + ", " + Math.floor(green * COLOR_MAX) + ", " + Math.floor(blue * COLOR_MAX) + ")";
+};
+var Vector = /** @class */function () {
+  function Vector(x, y) {
+    if (x === void 0) {x = 0;}
+    if (y === void 0) {y = 0;}
+    this.x = x;
+    this.y = y;
+  }
+  Vector.getLength = function (x, y) {
+    return Math.sqrt(x * x + y * y);
+  };
+  Vector.getDistance = function (pointA, pointB) {
+    return Vector.getLength(pointA.x - pointB.x, pointA.y - pointB.y);
+  };
+  Vector.getDifference = function (pointA, pointB) {
+    return new Vector(pointA.x - pointB.x, pointA.y - pointB.y);
+  };
+  Object.defineProperty(Vector.prototype, "length", {
+    get: function () {
+      return Math.sqrt(this.x * this.x + this.y * this.y);
+    },
+    enumerable: true,
+    configurable: true });
+
+  Vector.prototype.add = function (_a) {
+    var x = _a.x,y = _a.y;
+    this.x += x;
+    this.y += y;
+  };
+  Vector.prototype.multiply = function (value) {
+    this.x *= value;
+    this.y *= value;
+  };
+  Vector.prototype.angleTo = function (vector) {
+    return Math.atan2(vector.y - this.y, vector.x - this.x);
+  };
+  Vector.prototype.distanceTo = function (vector) {
+    return Vector.getDistance(this, vector);
+  };
+  return Vector;
+}();
+var Particle = /** @class */function () {
+  function Particle(_a) {
+    var _b = _a.position,x = _b.x,y = _b.y,radius = _a.radius,damping = _a.damping;
+    this.radius = 1;
+    this.mass = 1;
+    this.acceleration = new Vector();
+    this.velocity = new Vector();
+    this.damping = 0;
+    this.gravityObjects = [];
+    this.position = new Vector(x, y);
+    this.radius = radius;
+    this.damping = damping;
+  }
+  Object.defineProperty(Particle.prototype, "x", {
+    get: function () {
+      return this.position.x;
+    },
+    enumerable: true,
+    configurable: true });
+
+  Object.defineProperty(Particle.prototype, "y", {
+    get: function () {
+      return this.position.y;
+    },
+    enumerable: true,
+    configurable: true });
+
+  Particle.prototype.applyPhysic = function () {
+    var _this = this;
+    this.gravityObjects.forEach(function (gravityObject) {
+      var distance = Vector.getDistance(gravityObject, _this);
+      var angle = _this.position.angleTo(gravityObject);
+      var force = (gravityObject.mass + _this.mass) / (distance * distance) || 0;
+      var gravity = new Vector(Math.cos(angle) * force, Math.sin(angle) * force);
+      _this.velocity.add(gravity);
+    });
+    this.velocity.add(this.acceleration);
+    this.velocity.multiply(1 - this.damping);
+    this.position.add(this.velocity);
+  };
+  return Particle;
+}();
+var Spring = /** @class */function (_super) {
+  __extends(Spring, _super);
+  function Spring(_a) {
+    var position = _a.position,center = _a.center,radius = _a.radius,stiffness = _a.stiffness,damping = _a.damping;
+    var _this = _super.call(this, { position: position, radius: radius, damping: damping }) || this;
+    _this.stiffness = 1;
+    _this.center = new Vector(center.x, center.y);
+    _this.stiffness = stiffness;
+    return _this;
+  }
+  Spring.prototype.applyPhysic = function () {
+    this.force = Vector.getDifference(this.center, this.position);
+    this.force.multiply(this.stiffness);
+    this.velocity.add(this.force);
+    _super.prototype.applyPhysic.call(this);
+  };
+  return Spring;
+}(Particle);
+function main() {
+  var canvasEl = document.getElementById('canvas');
+  var context = canvasEl.getContext('2d');
+  var width = canvasEl.width,height = canvasEl.height;
+  var resize = function () {
+    var innerHeight = window.innerHeight,innerWidth = window.innerWidth;
+    canvasEl.width = innerWidth;
+    canvasEl.height = innerHeight;
+    width = innerWidth;
+    height = innerHeight;
+  };
+  window.addEventListener('resize', resize);
+  resize();
+  var MAX_DISTANCE = 200;
+  var BLOCK_SIZE = 10;
+  var BYTE_OFFSET = 4;
+  var MAX_OFFSET_X = 40;
+  var MAX_OFFSET_Y = 10;
+  var FONT_SIZE = 120;
+  var textures = WORDS.map(function (word) {return getTextTexture(word, FONT_SIZE);});
+  var textureA = textures[0],textureB = textures[1];
+  var center = {
+    x: width / 2,
+    y: height / 2 };
+
+  var radius = textureA.width / 2;
+  var particles = [];
+  var positions = textures.map(function (texture) {
+    var result = [];
+    for (var i = 0; i < texture.width / BLOCK_SIZE; i++) {
+      for (var j = 0; j < texture.height / BLOCK_SIZE; j++) {
+        var offset = Math.floor(j * BLOCK_SIZE * texture.width + i * BLOCK_SIZE + BLOCK_SIZE / 2) * BYTE_OFFSET;
+        if (texture.data[offset]) {
+          result.push({
+            x: i * BLOCK_SIZE + (width - texture.width) / 2,
+            y: j * BLOCK_SIZE + (height - texture.height) / 2 });
+
+        }
+      }
+    }
+    ;
+    return result;
+  });
+  var currentPositionsIndex = 0;
+  var MAX_PARTICLES = 300;
+  var particles = Array.from({ length: MAX_PARTICLES }, function (_value, index) {
+    var currentPositions = positions[currentPositionsIndex];
+    var position = currentPositions[index % currentPositions.length];
+    return new Spring({
+      position: position,
+      radius: 1,
+      center: position,
+      stiffness: 0.03,
+      damping: 0.25 });
+
+  });
+  var switchWord = function () {
+    currentPositionsIndex = (currentPositionsIndex + 1) % textures.length;
+    var currentTexture = textures[currentPositionsIndex];
+    mutateParticles(particles, positions[currentPositionsIndex], { x: width / 2, y: height / 2 });
+  };
+  var maxRadius = Math.sqrt(textureA.width / 2 * textureA.width / 2);
+  var backgroundColor = getBackgroundColor(context, width, height);
+  var PIXEL_SIZE = 9;
+  var STROKE_OPACITY = 0.3;
+  var ANIMATION_STEP = 0.02;
+  var COLOR_OFFSET = -0.3;
+  var animationProgress = 0;
+  var prevPhase = -1;
+  var step = function () {
+    var width = canvasEl.width,height = canvasEl.height;
+    animationProgress += ANIMATION_STEP;
+    var phase = Math.sign(Math.sin(animationProgress));
+    if (phase !== prevPhase) {
+      prevPhase = phase;
+      switchWord();
+    }
+    var fillScale = Math.abs(Math.sin(animationProgress + COLOR_OFFSET));
+    var strokeScale = 1 - fillScale;
+    context.fillStyle = backgroundColor;
+    context.fillRect(0, 0, width, height);
+    context.save();
+    context.fillStyle = getRGB(BASE_COLOR.map(function (color) {return color * fillScale;}));
+    context.strokeStyle = getRGB(BASE_COLOR.map(function (color) {return color * strokeScale;}));
+    particles.forEach(function (particle) {
+      particle.applyPhysic();
+      context.save();
+      context.translate(particle.x, particle.y);
+      context.beginPath();
+      context.rect(0, 0, PIXEL_SIZE, PIXEL_SIZE);
+      context.fill();
+      context.stroke();
+      context.restore();
+    });
+    context.restore();
+    requestAnimationFrame(step);
+  };
+  requestAnimationFrame(function () {return step(context);});
+  step(context);
+}
+function getTextTexture(text, fontSize) {
+  var canvasEl = new OffscreenCanvas(1024, 768);
+  var context = canvasEl.getContext('2d');
+  context.fillStyle = '#FFFFFF';
+  context.textAlign = 'left';
+  context.textBaseline = 'top';
+  context.font = "bold " + fontSize + "px Arial";
+  context.fillText(text, 0, 0);
+  var width = context.measureText(text).width;
+  return context.getImageData(0, 0, width, fontSize);
+}
+function getBackgroundColor(context, width, height) {
+  var gradient = context.createRadialGradient(width / 2, height / 2, width / 2, width / 2, height / 2, width);
+  BACKGROUND_COLORS.forEach(function (color, index) {
+    gradient.addColorStop(index, color);
+  });
+  return gradient;
+}
+function mutateParticles(particles, positions, defaultPosition) {
+  if (defaultPosition === void 0) {defaultPosition = { x: 0, y: 0 };}
+  shuffleArray(particles).forEach(function (particle, i) {
+    var _a = positions[i % positions.length] || defaultPosition,x = _a.x,y = _a.y;
+    var angle = particle.position.angleTo(defaultPosition);
+    var distance = particle.position.distanceTo(defaultPosition);
+    particle.center = { x: x, y: y };
+  });
+}
+function shuffleArray(array) {
+  var _a;
+  if (array.length <= 1) {
+    return array;
+  }
+  for (var index = 0; index < array.length - 1; index++) {
+    var cursor = array.length - index - 1;
+    var randomIndex = Math.floor((array.length - index) * Math.random());
+    _a = [array[randomIndex], array[cursor]], array[cursor] = _a[0], array[randomIndex] = _a[1];
+  }
+  return array;
+}
+document.addEventListener('DOMContentLoaded', main);</script>
+
+</body>
+</html>
