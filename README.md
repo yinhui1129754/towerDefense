@@ -43,6 +43,22 @@
 <!--  -->
 
 ## 目录说明
+<details>
+<summary>towerDefense</summary>
+
+.eslintignore // eslint排除目录  
+.eslintrc.js // eslint配置目录  
+.gitignore // git排除目录  
+package.json // 包引用文件  
+README.md // readme文件  
+tsconfig.json // ts配置文件  
+typedoc.json // typedoc 文档自动生成配置文件  
+webpack.config.gen.js // gameData.bin 生成项目  
+webpack.config.js  // 游戏运行配置项
+webpack.config.plist.js // plist查看项目  
+webpack.config.tiled.js // 地图编辑器项目  
+yarn.lock // yarn记录文件  
+</details>
 
 
 ``` 
@@ -257,3 +273,5 @@ npm run dev
 ## 注意项
 
 ### 场景id不能重复 不然会无法更改大小问题
+
+
