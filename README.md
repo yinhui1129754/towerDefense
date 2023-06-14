@@ -250,7 +250,9 @@ npm run dev
 
 如果项目对你有帮助,可以请他喝一杯咖啡。  
 
-![普通画笔]()  
+![赞赏码](https://github.com/yinhui1129754/towerDefense/blob/main/mdImg/zsm.jpg?raw=true)
+
+如果图片不显示请点击 [这里](https://yinhui1129754.coding.net/public/source/image/git/files/master/zsm.jpg)
 
 ## 注意项
 
