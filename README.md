@@ -59,18 +59,18 @@ webpack.config.plist.js $\color{#248b24}{plist查看项目}$
 webpack.config.tiled.js $\color{#248b24}{地图编辑器项目}$  
 yarn.lock $\color{#248b24}{yarn记录文件}$  
 
-<details>
-<summary>.vscode</summary>
+  <details style="margin-left:10px;">
+  <summary>.vscode</summary>
 
-settings.json $\color{#248b24}{vscode项目设置项}$   
-</details>
+  settings.json $\color{#248b24}{vscode项目设置项}$   
+  </details>
 
-<details>
-<summary>build</summary>
+  <details style="margin-left:10px;">
+  <summary>build</summary>
 
-build.js $\color{#248b24}{项目打包nodejs脚本 移动静态资源}$   
-docs.js $\color{#248b24}{文档打包nodejs脚本}$   
-</details>
+  build.js $\color{#248b24}{项目打包nodejs脚本 移动静态资源}$   
+  docs.js $\color{#248b24}{文档打包nodejs脚本}$   
+  </details>
 
 </details>
 
