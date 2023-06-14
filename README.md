@@ -43,7 +43,7 @@
 <!--  -->
 
 ## 目录说明
-<details open>
+<!-- <details open>
 <summary>towerDefense</summary>
 
 .eslintignore $\color{#248b24}{eslint排除目录}$   
@@ -59,22 +59,22 @@ webpack.config.plist.js $\color{#248b24}{plist查看项目}$
 webpack.config.tiled.js $\color{#248b24}{地图编辑器项目}$  
 yarn.lock $\color{#248b24}{yarn记录文件}$  
 
-  <details style="margin-left:10px;">
+  <details>
   <summary>.vscode</summary>
 
   settings.json $\color{#248b24}{vscode项目设置项}$   
   </details>
 
-  <details style="margin-left:10px;">
+  <details>
   <summary>build</summary>
 
   build.js $\color{#248b24}{项目打包nodejs脚本 移动静态资源}$   
   docs.js $\color{#248b24}{文档打包nodejs脚本}$   
   </details>
 
-</details>
+</details> -->
 
-<!-- 
+
 ``` 
 towerDefense
 │  .eslintignore // eslint排除目录
@@ -263,7 +263,7 @@ towerDefense
             menuSysyem.ts // 系统菜单视图 未使用
             menuTask.ts // 任务目录 未使用
 
-``` -->
+``` 
 
 ## 安装运行 
 ```
