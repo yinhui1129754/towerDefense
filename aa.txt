@@ -1,0 +1,236 @@
+卷 代码 的文件夹 PATH 列表
+卷序列号为 0E58-0144
+F:.
+│  .eslintignore
+│  .eslintrc.js
+│  .gitignore
+│  fileToBase64.html
+│  keyboard.html
+│  package.json
+│  README.md
+│  test.html
+│  tsconfig.json
+│  typedoc.json
+│  webpack.config.gen.js
+│  webpack.config.js
+│  webpack.config.plist.js
+│  webpack.config.tiled.js
+│  webpack.lib.config.js
+│  yarn.lock
+│  
+├─.vscode
+│      settings.json
+│      
+├─build
+│      build.js
+│      docs.js
+│      js.js
+│      
+├─docs
+│      角色类型.pdf
+│      角色类型.xlsx
+│      
+├─eleBuild
+│      .gitignore
+│      build注意.txt
+│      forge.config.js
+│      index.html
+│      index.js
+│      package.json
+│      yarn.lock
+│      
+├─example
+│  ├─editTiledmap
+│  │  │  all.html
+│  │  │  all.ts
+│  │  │  
+│  │  └─src
+│  │      │  index.ts
+│  │      │  
+│  │      ├─config
+│  │      │      rightBarRenderConfig.ts
+│  │      │      
+│  │      ├─utils
+│  │      │      enum.ts
+│  │      │      viewUtils.ts
+│  │      │      
+│  │      └─viewArea
+│  │              headMenu.ts
+│  │              imageList.ts
+│  │              rightBar.ts
+│  │              
+│  ├─example
+│  │      all.html
+│  │      all.ts
+│  │      test.ts
+│  │      
+│  ├─examplegen
+│  │  │  all.html
+│  │  │  all.ts
+│  │  │  allbuf.ts
+│  │  │  
+│  │  └─src
+│  │      │  main.ts
+│  │      │  
+│  │      ├─class
+│  │      │      GameData.ts
+│  │      │      
+│  │      ├─scss
+│  │      │      main.scss
+│  │      │      
+│  │      └─utils
+│  │              keyDes.ts
+│  │              type.ts
+│  │              utils.ts
+│  │              
+│  ├─libExample
+│  │      all.ts
+│  │      
+│  └─seePlist
+│          all.html
+│          all.ts
+│          
+├─md
+│      event.md
+│      
+├─public
+│  ├─audio
+│  │      openMenu.wav
+│  │      
+│  ├─editTiledmap
+│  │          
+│  ├─gameData
+│  │  │  config.json
+│  │  │  gameData.bin
+│  │  │  
+│  │  ├─actor
+│  │  │      zh.json
+│  │  │      
+│  │  ├─lang
+│  │  │      zh.json
+│  │  │      
+│  │  ├─mod
+│  │  │      res.json
+│  │  │      
+│  │  └─task
+│  │          
+│  ├─img
+│  │          
+│  ├─plist
+│  │      
+│  ├─scene
+│  │              
+│  └─script
+│          core.js
+│          
+├─spine
+│      
+└─src
+    │  index.ts
+    │  
+    ├─behavior
+    │      index.ts
+    │      
+    ├─class
+    │  │  behaviorTree.ts
+    │  │  bullet.ts
+    │  │  camera.ts
+    │  │  gameMenu.ts
+    │  │  gameText.ts
+    │  │  goods.ts
+    │  │  gun.ts
+    │  │  message.ts
+    │  │  openApi.ts
+    │  │  passive.ts
+    │  │  role.ts
+    │  │  task.ts
+    │  │  tiledmap.ts
+    │  │  
+    │  └─gameObject
+    │          base.ts
+    │          dumpObject.ts
+    │          gameObject.ts
+    │          sportBase.ts
+    │          
+    ├─core
+    │      gameMain.ts
+    │      main.ts
+    │      
+    ├─css
+    │      main.css
+    │      
+    ├─defaultData
+    │      base.ts
+    │      lang.ts
+    │      mod.ts
+    │      save.ts
+    │      scene.ts
+    │      task.ts
+    │      terrain.ts
+    │      ui.ts
+    │      
+    ├─dialog
+    │      failDialog.ts
+    │      winDialog.ts
+    │      
+    ├─gameClass
+    │      enemy.ts
+    │      processDialog.ts
+    │      sceneUtils.ts
+    │      spawnEnemies.ts
+    │      tower.ts
+    │      
+    ├─test
+    │      dialogPannel.ts
+    │      
+    ├─ui
+    │  ├─controlIcon
+    │  │      index.ts
+    │  │      
+    │  ├─dialogPannel
+    │  │      index.ts
+    │  │      
+    │  ├─map
+    │  │      index.ts
+    │  │      
+    │  ├─resShow
+    │  │      index.ts
+    │  │      
+    │  ├─rightMenu
+    │  │      index.ts
+    │  │      
+    │  ├─roleui
+    │  │      index.ts
+    │  │      
+    │  ├─scene
+    │  │      index.ts
+    │  │      
+    │  ├─scrollbox
+    │  │      index.ts
+    │  │      
+    │  ├─selectLevel
+    │  │      index.ts
+    │  │      
+    │  ├─timeTooltip
+    │  │      index.ts
+    │  │      
+    │  └─towerSelect
+    │          index.ts
+    │          
+    ├─utils
+    │      AStar.ts
+    │      defaultTypeEx.ts
+    │      enum.ts
+    │      plist.ts
+    │      spine.ts
+    │      TextMetrics.ts
+    │      types.ts
+    │      utils.ts
+    │      utilsPro.ts
+    │      
+    └─view
+            menuAttr.ts
+            menuEq.ts
+            menuSysyem.ts
+            menuTask.ts
+            

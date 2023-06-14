@@ -1,8 +1,8 @@
-# å¡”é˜²æ¸¸æˆ 
+# Ëş·ÀÓÎÏ· 
 
-## ä¸€ä¸ªå¬å”¤å‹å†›æ¥é˜»æ­¢é­”ç‹ä¼ é€çš„å¡”é˜²æ¸¸æˆ
+## Ò»¸öÓÃpixi.js±àĞ´µÄh5Ëş·ÀÓÎÏ·£¬¿ÉÒÔÓÃelectron´ò°üÎªexe£¬Ö§³ÖÒÆ¶¯¶Ë£¬Ò²¿ÉÒÔÓÃwebview¿Ø¼ş´ò°üÎªappÔÚÒÆ¶¯¶ËÊ¹ÓÃ
 
-## ç¯å¢ƒè¯´æ˜ 
+## »·¾³ËµÃ÷ 
 
 ```
   cnpm@6.2.0  
@@ -16,7 +16,7 @@
   registry = "https://registry.npmmirror.com/"  
 ```
 
-## eslintè¯´æ˜
+## eslintËµÃ÷
 
 ```
   @typescript-eslint/eslint-plugin@5.33.1  
@@ -28,22 +28,230 @@
   prettier@2.7.1  
 ```
 
-### å®‰è£…è¿è¡Œ 
+## ¹Ø¼ü¿âËµÃ÷
+
+```
+  @pixi/sound@^4.3.3 //Ò»¸öÉùÒô¹ÜÀí¿â
+  @zip.js/zip.js@2.4.10 // Ò»¸öÑ¹Ëõ¹ÜÀí¿â·½±ã×ÊÔ´´ò°ü
+  intersects@2.7.2 // ÊıÑ§Åö×²ÅĞ¶Ï¿â
+  lodash@4.17.20 // Ò»¸ö¸¨Öújs¸üºÃÓÃµÄÀà¿âÉî¿½±´ Ç³¿½±´
+  pixi-filters@4.2.0 // Ò»¸öpixiµÄshader¿â Ä£ºı£¬Å¤ÇúÃè±ßµÈ¹¦ÄÜ
+  pixi-spine@3.0.13 // spine¶¯»­Ö§³Ö¿â ÎÒÃÇ¶Ô²»Í¬spine°æ±¾×öÁË¼æÈİ
+  pixi.js@6.5.9 // Ò»¸öäÖÈ¾¿â
+  uglify-js@^3.17.4 // ´ò°üÑ¹Ëõjs´úÂëµÄ¹¤¾ß¿â
+```
+<!-- ?? -->
+
+## Ä¿Â¼ËµÃ÷
+
+
+``` 
+towerDefense
+©¦  ?.eslintignore // eslintÅÅ³ıÄ¿Â¼
+©¦  ?.eslintrc.js // eslintÅäÖÃÄ¿Â¼
+©¦  ?.gitignore // gitÅÅ³ıÄ¿Â¼
+©¦  ?package.json // °üÒıÓÃÎÄ¼ş
+©¦  ?README.md // readmeÎÄ¼ş
+©¦  ?tsconfig.json // tsÅäÖÃÎÄ¼ş
+©¦  ?typedoc.json // typedoc ÎÄµµ×Ô¶¯Éú³ÉÅäÖÃÎÄ¼ş
+©¦  ?webpack.config.gen.js // gameData.bin Éú³ÉÏîÄ¿
+©¦  ?webpack.config.js  // 
+©¦  ?webpack.config.plist.js // plist²é¿´ÏîÄ¿
+©¦  ?webpack.config.tiled.js // µØÍ¼±à¼­Æ÷ÏîÄ¿
+©¦  ?yarn.lock // yarn¼ÇÂ¼ÎÄ¼ş
+©¦  
+©À©¤?.vscode
+©¦      ?settings.json // vscodeÏîÄ¿ÉèÖÃÏî
+©¦      
+©À©¤?build // ´ò°üÎÄ¼ş¼Ğ
+©¦      ?build.js // ÏîÄ¿´ò°ünodejs½Å±¾ ÒÆ¶¯¾²Ì¬×ÊÔ´ 
+©¦      ?docs.js // ÎÄµµ´ò°ünodejs½Å±¾
+©¦      
+©À©¤?docs // ÎÄµµÎÄ¼ş¼Ğ
+©¦      ?½ÇÉ«ÀàĞÍ.pdf // ½ÇÉ«ÀàĞÍpdf¸ñÊ½
+©¦      ?½ÇÉ«ÀàĞÍ.xlsx // ½ÇÉ«ÀàĞÍxlsx¸ñÊ½
+©¦      
+©À©¤?eleBuild // electron´ò°üÎÄ¼ş¼Ğ ĞèÒª¸´ÖÆ³öÀ´µ¥¶À½¨Á¢ÎÄ¼ş¼Ğµ÷ÓÃ
+©¦      ?.gitignore // gitÅÅ³ıÄ¿Â¼
+©¦      ?build×¢Òâ.txt
+©¦      ?forge.config.js // ´ò°üÅäÖÃÎÄ¼ş
+©¦      ?index.html // Èë¿ÚhtmlÎÄ¼ş
+©¦      ?index.js // Èë¿ÚjsÎÄ¼ş
+©¦      ?package.json // °üÒıÓÃÎÄ¼ş
+©¦      ?yarn.lock // yarn°üÏÂÔØÀúÊ·
+©¦      
+©À©¤?example // ¸÷¸ö¹¦ÄÜÈë¿ÚÎÄ¼ş¼Ğ
+©¦  ©À©¤?editTiledmap // µØĞÎ±à¼­Æ÷Èë¿ÚÎÄ¼ş¼Ğ
+©¦  ©¦  ©¦  ?all.html
+©¦  ©¦  ©¦  ?all.ts
+©¦  ©¦  ©¦  
+©¦  ©¦  ©¸©¤?src // µØĞÎ±à¼­Æ÷srcÎÄ¼ş¼Ğ
+©¦  ©¦      ©¦  ?index.ts // ºËĞÄjs 
+©¦  ©¦      ©¦  
+©¦  ©¦      ©À©¤?config // ÓÒ²à²Ëµ¥±à¼­ÅäÖÃ
+©¦  ©¦      ©¦      ?rightBarRenderConfig.ts
+©¦  ©¦      ©¦      
+©¦  ©¦      ©À©¤?utils // ±à¼­Æ÷ĞèÒªµÄ¹¤¾ßÄ¿Â¼
+©¦  ©¦      ©¦      ?enum.ts
+©¦  ©¦      ©¦      ?viewUtils.ts
+©¦  ©¦      ©¦      
+©¦  ©¦      ©¸©¤?viewArea
+©¦  ©¦              ?headMenu.ts
+©¦  ©¦              ?imageList.ts
+©¦  ©¦              ?rightBar.ts
+©¦  ©¦              
+©¦  ©À©¤?example // ÓÎÏ·¶ÔÏóÈë¿ÚÎÄ¼ş¼Ğ
+©¦  ©¦      all.html
+©¦  ©¦      all.ts
+©¦  ©¦      test.ts
+©¦  ©¦      
+©¦  ©À©¤?examplegen // Êı¾İgameData.binÉú³ÉÈë¿ÚÎÄ¼ş¼Ğ
+©¦  ©¦  ©¦  all.html
+©¦  ©¦  ©¦  all.ts
+©¦  ©¦  ©¦  allbuf.ts
+©¦  ©¦  ©¦  
+©¦  ©¦  ©¸©¤?src
+©¦  ©¦      ©¦  main.ts
+©¦  ©¦      ©¦  
+©¦  ©¦      ©À©¤?class
+©¦  ©¦      ©¦      GameData.ts
+©¦  ©¦      ©¦      
+©¦  ©¦      ©À©¤?scss
+©¦  ©¦      ©¦      main.scss
+©¦  ©¦      ©¦      
+©¦  ©¦      ©¸©¤?utils
+©¦  ©¦              keyDes.ts
+©¦  ©¦              type.ts
+©¦  ©¦              utils.ts
+©¦  ©¦              
+©¦  ©¦      
+©¦  ©¸©¤?seePlist // ²é¿´plistÈë¿ÚÎÄ¼ş¼Ğ
+©¦          all.html
+©¦          all.ts
+©¦          
+©¦      
+©À©¤?public // ×ÊÔ´Ä¿Â¼ÎÄ¼ş¼Ğ
+©¦  ©À©¤?audio // ÉùÒôÎÄ¼ş¼Ğ
+©¦  ©¦      openMenu.wav
+©¦  ©¦      
+©¦  ©À©¤?gameData // ÓÎÏ·Êı¾İÎÄ¼ş¼Ğ
+©¦  ©¦  ©¦  config.json // ÓÎÏ·ÅäÖÃjson
+©¦  ©¦  ©¦  gameData.bin // spineÊı¾İ£¬»ù´¡¶ÔÏó´ò°üºóµÄbinÎÄ¼ş 
+©¦  ©¦  ©¦  
+©¦  ©¦  ©À©¤?actor // ½ÇÉ«×Ô¶¯Ëµ»°json
+©¦  ©¦  ©¦      zh.json
+©¦  ©¦  ©¦      
+©¦  ©¦  ©À©¤?lang // ÓïÑÔÎÄ¼ş¼Ğ
+©¦  ©¦  ©¦      zh.json
+©¦  ©¦  ©¦      
+©¦  ©¦  ©¸©¤?mod // modÎÄ¼ş¼Ğ
+©¦  ©¦         res.json
+©¦  ©¦        
+©¦  ©¦          
+©¦  ©À©¤?img // Í¼Æ¬ÎÄ¼ş¼Ğ
+©¦  ©¦          
+©¦  ©À©¤?plist // plistÎÄ¼ş¼Ğ
+©¦  ©¦      
+©¦  ©À©¤?scene // ³¡¾°ÎÄ¼ş¼Ğ
+©¦  ©¦              
+©¦  ©¸©¤?script // ºËĞÄjsÎÄ¼ş¼Ğ
+©¦          core.js
+©¦          
+©À©¤?spine // Ê¹ÓÃspine¶ÔÏó ²»¹ıÕâÀïÖ»ÊÇ¿´ ÕæÕıÊ¹ÓÃÊÇÔÚgameData.binÖĞ
+©¦      
+©¸©¤?src
+    ©¦  
+    ©¦      
+    ©À©¤?class // ÀàÎÄ¼ş¼Ğ
+    ©¦  ©¦  behaviorTree.ts // ĞĞÎªÀà
+    ©¦  ©¦  bullet.ts // ×Óµ¯Àà
+    ©¦  ©¦  camera.ts // ¾µÍ·Àà Î´Íê³É
+    ©¦  ©¦  gameMenu.ts // ÓÎÏ·²Ëµ¥Àà
+    ©¦  ©¦  gameText.ts // ¸¡¶¯ÎÄ×ÖÀà
+    ©¦  ©¦  goods.ts // ÎïÆ·Àà
+    ©¦  ©¦  gun.ts // Ç¹Àà
+    ©¦  ©¦  message.ts // »ù´¡ÏûÏ¢´«µİÀà on off µÈ·½·¨
+    ©¦  ©¦  openApi.ts // ½Å±¾Àà
+    ©¦  ©¦  passive.ts  // ÓÎÏ·ÊôĞÔÀà
+    ©¦  ©¦  role.ts // ½ÇÉ«Àà
+    ©¦  ©¦  task.ts // ÈÎÎñÀà Î´Ê¹ÓÃ
+    ©¦  ©¦  tiledmap.ts // µØÍ¼¿éÀà
+    ©¦  ©¦  
+    ©¦  ©¸©¤?gameObject // ÓÎÏ·»ù´¡¶ÔÏóÀà
+    ©¦          base.ts // »ù´¡¶ÔÏóÀà base£¬ color£¬pointµÈ
+    ©¦          dumpObject.ts // ¶¯Ì¬¶ÔÏóÀà
+    ©¦          gameObject.ts // ÓÎÏ·¶ÔÏóÀà
+    ©¦          sportBase.ts // ÔË¶¯¶ÔÏóÀà
+    ©¦          
+    ©À©¤?core // ºËĞÄÈë¿ÚÀàÎÄ¼ş¼Ğ
+    ©¦      gameMain.ts // ÌØ¶¨ÓÎÏ·ĞèÒªµÄÀà
+    ©¦      main.ts // ÓÎÏ·ºËĞÄÀà
+    ©¦      
+    ©À©¤?css // cssÎÄ¼ş¼Ğ
+    ©¦      main.css
+    ©¦      
+    ©À©¤?defaultData // Ä¬ÈÏÊı¾İÀà
+    ©¦      base.ts
+    ©¦      lang.ts
+    ©¦      mod.ts
+    ©¦      save.ts
+    ©¦      scene.ts
+    ©¦      task.ts
+    ©¦      terrain.ts
+    ©¦      ui.ts
+    ©¦      
+    ©À©¤?dialog // µ¯´°¶Ô»°¿ò´´½¨·½·¨
+    ©¦      failDialog.ts // Ê§°Üµ¯´°
+    ©¦      winDialog.ts // Ê¤Àûµ¯´°
+    ©¦      
+    ©À©¤?gameClass // ÌØ¶¨ÓÎÏ·Àà
+    ©¦      enemy.ts // µĞÈËÀà
+    ©¦      processDialog.ts // ¶Ô»°¿ò½ø³ÌÀà
+    ©¦      sceneUtils.ts // ³¡¾°À©Õ¹Àà
+    ©¦      spawnEnemies.ts // µĞÈË³ö±øÀà
+    ©¦      tower.ts // ËşÀà
+    ©¦      
+    ©À©¤?test // ²âÊÔÎÄ¼ş¼Ğ
+    ©¦      dialogPannel.ts
+    ©¦      
+    ©À©¤?ui // uiÎÄ¼ş¼Ğ
+    ©¦           
+    ©À©¤?utils // ¹¤¾ßÀà
+    ©¦      AStar.ts // A*Ñ°Â·Àà
+    ©¦      defaultTypeEx.ts
+    ©¦      enum.ts  // Ã¶¾ÙÀà
+    ©¦      plist.ts // plistÀ©Õ¹ÄÜ²é¿´
+    ©¦      spine.ts // spine°æ±¾¼æÈİ
+    ©¦      TextMetrics.ts // ÎÄ×Ö»æÖÆÖØĞ´Àà Î´ÍêÉÆ£¬ÖØĞ´pixiÀïÃæµÄÎÄ×ÖäÖÈ¾·½°¸Ïë¼ÓÈë|n0x00000000|rÑÕÉ«äÖÈ¾
+    ©¦      types.ts // ½á¹¹Àà
+    ©¦      utils.ts // »ù´¡¹¤¾ßÀà
+    ©¦      utilsPro.ts // ÓÎÏ·À©Õ¹Àà
+    ©¦      
+    ©¸©¤?view
+            menuAttr.ts // ²Ëµ¥ÊôĞÔÊÓÍ¼ Î´Ê¹ÓÃ
+            menuEq.ts // ×°±¸Ô¤ÀÀÊÓÍ¼ Î´Ê¹ÓÃ
+            menuSysyem.ts // ÏµÍ³²Ëµ¥ÊÓÍ¼ Î´Ê¹ÓÃ
+            menuTask.ts // ÈÎÎñÄ¿Â¼ Î´Ê¹ÓÃ
+
+```
+
+## °²×°ÔËĞĞ 
 ```
 yarn  
 npm run dev  
 ```
 
-### æ€è·¯è¯´æ˜ 
+## ÏêÏ¸¹¦ÄÜËµÃ÷
 
-åœ°å½¢å±‚,æˆ¿å±‹å»ºç­‘ï¼Œé©¬è·¯å±‚
-å¯ç ´åç‰©ï¼Œç”¨æˆ·ï¼Œnpcåæ ‡å±‚
-ç‰¹æ•ˆï¼Œç¯å¢ƒç‰¹æ•ˆï¼Œå­å¼¹å±‚
-èœå•ï¼Œç•Œé¢ï¼Œæ“ä½œå±‚
+(1)¿ª·¢Á÷³Ì½éÉÜ
 
 
-### æ–¹æ³•è¯´æ˜
+## ÔŞÖú×÷Õß
 
-pixi æˆªå›¾ testMain.$app.renderer.plugins.extract.canvas(testMain.$app.stage).toDataURL()
+Èç¹ûÏîÄ¿¶ÔÄãÓĞ°ïÖú,¿ÉÒÔÇëËûºÈÒ»±­¿§·È¡£  
 
-### åœºæ™¯idä¸èƒ½é‡å¤ ä¸ç„¶ä¼šæ— æ³•æ›´æ”¹å¤§å°é—®é¢˜
+![ÆÕÍ¨»­±Ê]()  
+
+## ×¢ÒâÏî
+
+### ³¡¾°id²»ÄÜÖØ¸´ ²»È»»áÎŞ·¨¸ü¸Ä´óĞ¡ÎÊÌâ

@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist&&webpack --mode=production --node-env=production&&node build/build.js&&rimraf dist/editTiledmap",
-    "build:lib": "rimraf dist&&webpack --mode=production --node-env=production --config ./webpack.lib.config.js&&node build/build.js&&rimraf dist/editTiledmap",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "build:devplist": "rimraf dist&&webpack --mode=production --node-env=production --config ./webpack.config.plist.js&&node build/build.js",
