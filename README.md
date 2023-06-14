@@ -43,24 +43,38 @@
 <!--  -->
 
 ## 目录说明
-<details>
+<details open>
 <summary>towerDefense</summary>
 
-.eslintignore // eslint排除目录  
-.eslintrc.js // eslint配置目录  
-.gitignore // git排除目录  
-package.json // 包引用文件  
-README.md // readme文件  
-tsconfig.json // ts配置文件  
-typedoc.json // typedoc 文档自动生成配置文件  
-webpack.config.gen.js // gameData.bin 生成项目  
-webpack.config.js  // 游戏运行配置项
-webpack.config.plist.js // plist查看项目  
-webpack.config.tiled.js // 地图编辑器项目  
-yarn.lock // yarn记录文件  
+.eslintignore $\color{#00ff00}{eslint排除目录}$   
+.eslintrc.js $\color{#00ff00}{eslint配置目录}$   
+.gitignore $\color{#00ff00}{git排除目录}$   
+package.json $\color{#00ff00}{包引用文件}$   
+README.md $\color{#00ff00}{readme文件}$   
+tsconfig.json $\color{#00ff00}{ts配置文件}$   
+typedoc.json $\color{#00ff00}{typedoc 文档自动生成配置文件}$  
+webpack.config.gen.js $\color{#00ff00}{gameData.bin 生成项目}$  
+webpack.config.js  $\color{#00ff00}{游戏运行配置项}$  
+webpack.config.plist.js $\color{#00ff00}{plist查看项目}$  
+webpack.config.tiled.js $\color{#00ff00}{地图编辑器项目}$  
+yarn.lock $\color{#00ff00}{yarn记录文件}$  
+
+<details>
+<summary>.vscode</summary>
+
+settings.json $\color{#00ff00}{vscode项目设置项}$   
 </details>
 
+<details>
+<summary>build</summary>
 
+build.js $\color{#00ff00}{项目打包nodejs脚本 移动静态资源}$   
+docs.js $\color{#00ff00}{文档打包nodejs脚本}$   
+</details>
+
+</details>
+
+<!-- 
 ``` 
 towerDefense
 │  .eslintignore // eslint排除目录
@@ -249,7 +263,7 @@ towerDefense
             menuSysyem.ts // 系统菜单视图 未使用
             menuTask.ts // 任务目录 未使用
 
-```
+``` -->
 
 ## 安装运行 
 ```
