@@ -90,7 +90,7 @@ npm run dev
 (1)开发流程介绍
 
 ## 运行效果截图
-![项目运行效果截图](https://blog-static.cnblogs.com/files/huihuishijie/test2.gif?t=1686840062&download=true)  
+![项目运行效果截图](https://github.com/yinhui1129754/towerDefense/blob/main/mdImg/test2.gif?raw=true)  
 
 
 ## 项目开源地址:  
