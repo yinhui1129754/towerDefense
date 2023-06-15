@@ -1,8 +1,8 @@
-# Ëş·ÀÓÎÏ· 
+# é˜»æ­¢ä¼ é€ 
 
-## Ò»¸öÓÃpixi.js±àĞ´µÄh5Ëş·ÀÓÎÏ·£¬¿ÉÒÔÓÃelectron´ò°üÎªexe£¬Ö§³ÖÒÆ¶¯¶Ë£¬Ò²¿ÉÒÔÓÃwebview¿Ø¼ş´ò°üÎªappÔÚÒÆ¶¯¶ËÊ¹ÓÃ
+## ä¸€ä¸ªç”¨pixi.jsç¼–å†™çš„h5å¡”é˜²æ¸¸æˆï¼Œå¯ä»¥ç”¨electronæ‰“åŒ…ä¸ºexeï¼Œæ”¯æŒç§»åŠ¨ç«¯ï¼Œä¹Ÿå¯ä»¥ç”¨webviewæ§ä»¶æ‰“åŒ…ä¸ºappåœ¨ç§»åŠ¨ç«¯ä½¿ç”¨
 
-## »·¾³ËµÃ÷ 
+## ç¯å¢ƒè¯´æ˜ 
 
 ```
   cnpm@6.2.0  
@@ -16,7 +16,7 @@
   registry = "https://registry.npmmirror.com/"  
 ```
 
-## eslintËµÃ÷
+## eslintè¯´æ˜
 
 ```
   @typescript-eslint/eslint-plugin@5.33.1  
@@ -28,78 +28,80 @@
   prettier@2.7.1  
 ```
 
-## ¹Ø¼ü¿âËµÃ÷
+## å…³é”®åº“è¯´æ˜
 
 ```
-  @pixi/sound@^4.3.3 //Ò»¸öÉùÒô¹ÜÀí¿â
-  @zip.js/zip.js@2.4.10 // Ò»¸öÑ¹Ëõ¹ÜÀí¿â·½±ã×ÊÔ´´ò°ü
-  intersects@2.7.2 // ÊıÑ§Åö×²ÅĞ¶Ï¿â
-  lodash@4.17.20 // Ò»¸ö¸¨Öújs¸üºÃÓÃµÄÀà¿âÉî¿½±´ Ç³¿½±´
-  pixi-filters@4.2.0 // Ò»¸öpixiµÄshader¿â Ä£ºı£¬Å¤ÇúÃè±ßµÈ¹¦ÄÜ
-  pixi-spine@3.0.13 // spine¶¯»­Ö§³Ö¿â ÎÒÃÇ¶Ô²»Í¬spine°æ±¾×öÁË¼æÈİ
-  pixi.js@6.5.9 // Ò»¸öäÖÈ¾¿â
-  uglify-js@^3.17.4 // ´ò°üÑ¹Ëõjs´úÂëµÄ¹¤¾ß¿â
+  @pixi/sound@^4.3.3 //ä¸€ä¸ªå£°éŸ³ç®¡ç†åº“
+  @zip.js/zip.js@2.4.10 // ä¸€ä¸ªå‹ç¼©ç®¡ç†åº“æ–¹ä¾¿èµ„æºæ‰“åŒ…
+  intersects@2.7.2 // æ•°å­¦ç¢°æ’åˆ¤æ–­åº“
+  lodash@4.17.20 // ä¸€ä¸ªè¾…åŠ©jsæ›´å¥½ç”¨çš„ç±»åº“æ·±æ‹·è´ æµ…æ‹·è´
+  pixi-filters@4.2.0 // ä¸€ä¸ªpixiçš„shaderåº“ æ¨¡ç³Šï¼Œæ‰­æ›²æè¾¹ç­‰åŠŸèƒ½
+  pixi-spine@3.0.13 // spineåŠ¨ç”»æ”¯æŒåº“ æˆ‘ä»¬å¯¹ä¸åŒspineç‰ˆæœ¬åšäº†å…¼å®¹
+  pixi.js@6.5.9 // ä¸€ä¸ªæ¸²æŸ“åº“
+  uglify-js@^3.17.4 // æ‰“åŒ…å‹ç¼©jsä»£ç çš„å·¥å…·åº“
 ```
 <!--  -->
 
-## Ä¿Â¼ËµÃ÷
+## ç›®å½•è¯´æ˜
 
 
-[Ä¿Â¼½á¹¹¿ÉÒÔµã»÷ÕâÀï](https://github.com/yinhui1129754/towerDefense/blob/main/md/dirstatus.md)
+[ç›®å½•ç»“æ„å¯ä»¥ç‚¹å‡»è¿™é‡Œ](https://github.com/yinhui1129754/towerDefense/blob/main/md/dirstatus.md)
 <!-- <details open>
 <summary>towerDefense</summary>
 
-.eslintignore $\color{#248b24}{eslintÅÅ³ıÄ¿Â¼}$   
-.eslintrc.js $\color{#248b24}{eslintÅäÖÃÄ¿Â¼}$   
-.gitignore $\color{#248b24}{gitÅÅ³ıÄ¿Â¼}$   
-package.json $\color{#248b24}{°üÒıÓÃÎÄ¼ş}$   
-README.md $\color{#248b24}{readmeÎÄ¼ş}$   
-tsconfig.json $\color{#248b24}{tsÅäÖÃÎÄ¼ş}$   
-typedoc.json $\color{#248b24}{typedoc ÎÄµµ×Ô¶¯Éú³ÉÅäÖÃÎÄ¼ş}$  
-webpack.config.gen.js $\color{#248b24}{gameData.bin Éú³ÉÏîÄ¿}$  
-webpack.config.js  $\color{#248b24}{ÓÎÏ·ÔËĞĞÅäÖÃÏî}$  
-webpack.config.plist.js $\color{#248b24}{plist²é¿´ÏîÄ¿}$  
-webpack.config.tiled.js $\color{#248b24}{µØÍ¼±à¼­Æ÷ÏîÄ¿}$  
-yarn.lock $\color{#248b24}{yarn¼ÇÂ¼ÎÄ¼ş}$  
+.eslintignore $\color{#248b24}{eslintæ’é™¤ç›®å½•}$   
+.eslintrc.js $\color{#248b24}{eslinté…ç½®ç›®å½•}$   
+.gitignore $\color{#248b24}{gitæ’é™¤ç›®å½•}$   
+package.json $\color{#248b24}{åŒ…å¼•ç”¨æ–‡ä»¶}$   
+README.md $\color{#248b24}{readmeæ–‡ä»¶}$   
+tsconfig.json $\color{#248b24}{tsé…ç½®æ–‡ä»¶}$   
+typedoc.json $\color{#248b24}{typedoc æ–‡æ¡£è‡ªåŠ¨ç”Ÿæˆé…ç½®æ–‡ä»¶}$  
+webpack.config.gen.js $\color{#248b24}{gameData.bin ç”Ÿæˆé¡¹ç›®}$  
+webpack.config.js  $\color{#248b24}{æ¸¸æˆè¿è¡Œé…ç½®é¡¹}$  
+webpack.config.plist.js $\color{#248b24}{plistæŸ¥çœ‹é¡¹ç›®}$  
+webpack.config.tiled.js $\color{#248b24}{åœ°å›¾ç¼–è¾‘å™¨é¡¹ç›®}$  
+yarn.lock $\color{#248b24}{yarnè®°å½•æ–‡ä»¶}$  
 
   <details>
   <summary>.vscode</summary>
 
-  settings.json $\color{#248b24}{vscodeÏîÄ¿ÉèÖÃÏî}$   
+  settings.json $\color{#248b24}{vscodeé¡¹ç›®è®¾ç½®é¡¹}$   
   </details>
 
   <details>
   <summary>build</summary>
 
-  build.js $\color{#248b24}{ÏîÄ¿´ò°ünodejs½Å±¾ ÒÆ¶¯¾²Ì¬×ÊÔ´}$   
-  docs.js $\color{#248b24}{ÎÄµµ´ò°ünodejs½Å±¾}$   
+  build.js $\color{#248b24}{é¡¹ç›®æ‰“åŒ…nodejsè„šæœ¬ ç§»åŠ¨é™æ€èµ„æº}$   
+  docs.js $\color{#248b24}{æ–‡æ¡£æ‰“åŒ…nodejsè„šæœ¬}$   
   </details>
 
 </details> -->
 
 
 
-## °²×°ÔËĞĞ 
+## å®‰è£…è¿è¡Œ 
 ```
 yarn  
 npm run dev  
 ```
 
-## ÏêÏ¸¹¦ÄÜËµÃ÷
+## è¯¦ç»†åŠŸèƒ½è¯´æ˜
 
-(1)¿ª·¢Á÷³Ì½éÉÜ
+(1)å¼€å‘æµç¨‹ä»‹ç»
 
+## è¿è¡Œæ•ˆæœæˆªå›¾
+![é¡¹ç›®è¿è¡Œæ•ˆæœæˆªå›¾](https://raw.githubusercontent.com/yinhui1129754/fishing/master/img/pro/play.gif)  
 
-## ÔŞÖú×÷Õß
+## èµåŠ©ä½œè€…
 
-Èç¹ûÏîÄ¿¶ÔÄãÓĞ°ïÖú,¿ÉÒÔÇëËûºÈÒ»±­¿§·È¡£  
+å¦‚æœé¡¹ç›®å¯¹ä½ æœ‰å¸®åŠ©,å¯ä»¥è¯·ä»–å–ä¸€æ¯å’–å•¡ã€‚  
 
-![ÔŞÉÍÂë](https://github.com/yinhui1129754/towerDefense/blob/main/mdImg/zsm.png?raw=true)
+![èµèµç ](https://images.cnblogs.com/cnblogs_com/huihuishijie/1867967/o_230615140052_zsm.png)
 
-Èç¹ûÍ¼Æ¬²»ÏÔÊ¾Çëµã»÷ [ÕâÀï](https://yinhui1129754.coding.net/public/source/image/git/files/master/zsm.jpg)
+å¦‚æœå›¾ç‰‡ä¸æ˜¾ç¤ºè¯·ç‚¹å‡» [è¿™é‡Œ](https://yinhui1129754.coding.net/public/source/image/git/files/master/zsm.jpg)
 
-## ×¢ÒâÏî
+## æ³¨æ„é¡¹
 
-### ³¡¾°id²»ÄÜÖØ¸´ ²»È»»áÎŞ·¨¸ü¸Ä´óĞ¡ÎÊÌâ
+### åœºæ™¯idä¸èƒ½é‡å¤ ä¸ç„¶ä¼šæ— æ³•æ›´æ”¹å¤§å°é—®é¢˜
 
 

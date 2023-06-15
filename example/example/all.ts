@@ -99,9 +99,9 @@ userUtilsPro.xhrLoad("gameData/gameData.bin", function(e:any) {
                   m.runScript(script)
                   m.init()
 
-                  m.loadServerScene("scene/allLevel/1.json")
+                  // m.loadServerScene("scene/allLevel/1.json")
                   // m.loadServerScene("scene/selectALevel.json")
-                  // m.loadServerScene("scene/start.json")
+                  m.loadServerScene("scene/start.json")
                 })
                 // testEntry(m)
               })
