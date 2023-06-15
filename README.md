@@ -90,7 +90,16 @@ npm run dev
 (1)开发流程介绍
 
 ## 运行效果截图
-![项目运行效果截图](https://raw.githubusercontent.com/yinhui1129754/fishing/master/img/pro/play.gif)  
+![项目运行效果截图](https://blog-static.cnblogs.com/files/huihuishijie/test2.gif?t=1686840062&download=true)  
+
+
+## 项目开源地址:  
+
+[https://github.com/yinhui1129754/towerDefense](https://github.com/yinhui1129754/towerDefense)
+
+## 游戏开发交流群：
+
+[859055710](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8l4Sl2HGMKbP2hl8TWkwgY-IiMMwbwJp&authKey=DGnVHlpdqlyyRphG1XtEpuVKWkRXTlGSixRMeKLyuZkoGy%2BsYzOfjKzij0KBJYba&noverify=0&group_code=859055710)
 
 ## 赞助作者
 
