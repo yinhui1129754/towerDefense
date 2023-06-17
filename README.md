@@ -88,7 +88,13 @@ npm run dev
 
 ## 详细功能说明
 
-(1)开发流程介绍
+[(1)设计逻辑](https://blog.csdn.net/baidu_38766085/article/details/131254398)  
+[(2)场景编辑器](https://blog.csdn.net/baidu_38766085/article/details/131261290)  
+[(3)四叉树使用](https://blog.csdn.net/baidu_38766085/article/details/131261728)  
+[(4)A星的使用](https://blog.csdn.net/baidu_38766085/article/details/131262041)  
+[(5)子弹跟随精灵移动](https://blog.csdn.net/baidu_38766085/article/details/131262041)  
+[(6)游戏资源打包逻辑](https://blog.csdn.net/baidu_38766085/article/details/131262775)  
+plist在pixi.js中的使用  
 
 ## 运行效果截图
 ![项目运行效果截图](https://github.com/yinhui1129754/towerDefense/blob/main/mdImg/test2.gif?raw=true)  
