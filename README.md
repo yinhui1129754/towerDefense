@@ -9,6 +9,7 @@
   npm@6.14.13  
   node@12.22.7  
   npminstall@3.28.0  
+  yarn@1.22.10  
   
   npm config list  
   electron_mirror = "https://npm.taobao.org/mirrors/electron/"  
