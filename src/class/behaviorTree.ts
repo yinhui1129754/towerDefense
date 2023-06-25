@@ -270,18 +270,25 @@ export class AutoArcFireBehavior extends BehaviorTree {
             const gun = p.eqGun
             if (gun) {
               const bulletName = gun.getBulletName()
+              // 发射子弹数量
               const bulletNumber = 36
+              // 角度增量
               const change = Math.PI * 2 / bulletNumber
+              // 开始点根据绑定单位的坐标获取
               const startPoint = { x: p.x, y: p.y }
               for (let i = 0; i < bulletNumber; i++) {
-                console.log(userUtilsPro.Clamp(200, sbRect.width, sbRect.height))
+                // 结束点根据极坐标位移算出来 参数一 开始点，参数二 角度， 参数三 距离
                 const end = userUtilsPro.coorTranslate(startPoint, change * i, Math.sqrt(Math.pow(sbRect.width, 2) + Math.pow(sbRect.height, 2)) + 50)
+                // 创建子弹对象
                 const b = Bullet.create(bulletName, startPoint, {
                   x: end[0],
                   y: end[1]
                 }, BULLET_MOVE_TYPE.LINE) as Bullet
+                // 子弹移动速度
                 b.setSpeed(3)
+                // 子弹的创建单位
                 b.use = p.id
+                // 添加子弹到场景
                 Main.getMain().getNowScene().addGameObject(b)
               }
             }
