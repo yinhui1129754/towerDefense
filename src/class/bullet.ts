@@ -136,7 +136,13 @@ export class Bullet extends SportBase {
         break
     }
   }
-
+  updateSpeed() {
+    if (this.moveType === BULLET_MOVE_TYPE.TRACK) {
+      this._updateTrack()
+    } else {
+      this._setMoveType(this.moveType)
+    }
+  }
   public setMoveType(movetype:BULLET_MOVE_TYPE, option?:any) {
     return this._setMoveType(movetype, option)
   }
@@ -152,6 +158,11 @@ export class Bullet extends SportBase {
       y: c[1]
     }
     this.tMult = this.speed / userUtilsPro.getCurveLenght(this.start, this.center, this.end)
+  }
+
+  setSpeed(speed:number) {
+    this.speed = speed
+    this.updateSpeed()
   }
 
   /**

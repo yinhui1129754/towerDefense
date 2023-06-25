@@ -1,7 +1,8 @@
 import Main from "../core/main"
-import { BEHAVIOR_STATE, GAMEOBJECT_STATE, GAMEOBJECT_TYPE } from "../utils/enum"
+import { BEHAVIOR_STATE, BULLET_MOVE_TYPE, GAMEOBJECT_STATE, GAMEOBJECT_TYPE } from "../utils/enum"
 import { BEHAVIORDATA, POINT, RECT } from "../utils/types"
 import userUtilsPro from "../utils/utilsPro"
+import { Bullet } from "./bullet"
 import { Time } from "./gameObject/base"
 import GameObject from "./gameObject/gameObject"
 import { Goods } from "./goods"
@@ -99,6 +100,7 @@ export class BehaviorTree {
    * @param gameObject 实体单位
    */
   intervalCall(beHaviorData: BEHAVIORDATA, gameObject: GameObject) { }
+  // setArguments(){}
 }
 
 /**
@@ -243,8 +245,52 @@ export class AutoFireBehavior extends BehaviorTree {
       }
     }
   }
+  setArguments(interval:number) {
+    this.setInterVal(interval)
+  }
 }
 
+/**
+ * 自动发圈子弹行为
+ */
+export class AutoArcFireBehavior extends BehaviorTree {
+  constructor(interval = 3000) {
+    super(interval)
+  }
+  intervalCall(beHaviorData: BEHAVIORDATA, gameObject: GameObject) {
+    const p = gameObject as Role
+    const sbRect = Main.getMain().getNowScene().getSbRect()
+    if (p.state === GAMEOBJECT_STATE.LIVEING && (p.behaviorState === BEHAVIOR_STATE.FIGHT || p.behaviorState === BEHAVIOR_STATE.STATIC)) {
+      if (p.parent) {
+        const arrs = p.parent.quadtree.retrieveArc(p, p.endHurtDistance)
+        for (let i = 0; i < arrs.length; i++) {
+          const cr = arrs[i]
+          if (cr.classType === GAMEOBJECT_TYPE.NPC ||
+            cr.classType === GAMEOBJECT_TYPE.ENEMY) {
+            const gun = p.eqGun
+            if (gun) {
+              const bulletName = gun.getBulletName()
+              const bulletNumber = 36
+              const change = Math.PI * 2 / bulletNumber
+              const startPoint = { x: p.x, y: p.y }
+              for (let i = 0; i < bulletNumber; i++) {
+                console.log(userUtilsPro.Clamp(200, sbRect.width, sbRect.height))
+                const end = userUtilsPro.coorTranslate(startPoint, change * i, Math.sqrt(Math.pow(sbRect.width, 2) + Math.pow(sbRect.height, 2)) + 50)
+                const b = Bullet.create(bulletName, startPoint, {
+                  x: end[0],
+                  y: end[1]
+                }, BULLET_MOVE_TYPE.LINE) as Bullet
+                b.setSpeed(3)
+                b.use = p.id
+                Main.getMain().getNowScene().addGameObject(b)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 /**
  * 自动寻找敌人的行为 随从ai
  */
@@ -466,7 +512,8 @@ export const allBehavior = {
   AutoFireBehavior, // 自动开火行为
   EscapeBehavior, // 逃跑行为
   AutoFindEnemyBehavior, // 自动寻找敌人行为
-  FightJudgeBehavior1 // 战斗行为1
+  FightJudgeBehavior1, // 战斗行为1
+  AutoArcFireBehavior
 }
 
 /**

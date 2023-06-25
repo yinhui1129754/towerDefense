@@ -764,6 +764,11 @@ export default {
   tower: [
     {
       role: "pys_nurse",
+      behavior: {
+        "AutoArcFireBehavior": {
+          argu: [1000]
+        }
+      },
       level: [
         {
           hurt: 60,

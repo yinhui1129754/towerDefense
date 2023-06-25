@@ -1502,7 +1502,10 @@ export const userUtilsPro = {
 
   Min(a:number, b:number) { return (a < b) ? a : b },
   Max(a:number, b:number) { return (a > b) ? a : b },
-  Clamp(v:number, min:number, max:number) { return this.Min(this.Max(v, min), max) },
+  Clamp(v:number, min:number, max:number) {
+    if (min > max) { [min, max] = [max, min] }
+    return this.Min(this.Max(v, min), max)
+  },
 
   /**
    * 随机数 0-m

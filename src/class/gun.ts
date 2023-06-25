@@ -115,14 +115,18 @@ export class Gun extends Goods {
     // this.fire({ x: p[0], y: p[1] })
   }
 
+  getBulletName() {
+    const eqAttr = this.createData.eqAttr
+    return eqAttr.bullet || "zd_shouqiang"
+  }
   /**
    * 开火方法
    * @param end 结束点的位置 这里不是会直接到end点
    */
   fire(end:POINT) {
-    const eqAttr = this.createData.eqAttr
+    const bulletName = this.getBulletName()
     if (this.nowFireInterval < Main.getMain().lapseTime) {
-      const b = Bullet.create(eqAttr.bullet || "zd_shouqiang", { x: this.x, y: this.y }, end, BULLET_MOVE_TYPE.LINE) as Bullet
+      const b = Bullet.create(bulletName, { x: this.x, y: this.y }, end, BULLET_MOVE_TYPE.LINE) as Bullet
       if (this.useRole) { b.use = this.useRole.id }
       Main.getMain().getNowScene().addGameObject(b)
       this.updateFireInterval()
@@ -133,9 +137,10 @@ export class Gun extends Goods {
   }
 
   fireTrackBullet(target:Role, isHurtTarget = false, trackMoveType = BULLET_MOVE_TYPE.BEZIER) {
-    const eqAttr = this.createData.eqAttr
+    const bulletName = this.getBulletName()
+    // const eqAttr = this.createData.eqAttr
     if (this.nowFireInterval < Main.getMain().lapseTime) {
-      const b = Bullet.create(eqAttr.bullet || "zd_shouqiang", { x: this.x, y: this.y }, { x: target.x, y: target.y }, BULLET_MOVE_TYPE.TRACK, {
+      const b = Bullet.create(bulletName, { x: this.x, y: this.y }, { x: target.x, y: target.y }, BULLET_MOVE_TYPE.TRACK, {
         moveTypeOption: {
           trackTarget: target,
           isHurtTarget: true,

@@ -116,6 +116,18 @@ export class TowerSelect extends PIXI.Container {
       tower.addBehaviorManager(bm)
       const autoFire = new allBehavior.AutoFireBehavior()
       bm.addBehavior(autoFire)
+      if (towerData.behavior) {
+        const behavior = towerData.behavior
+        for (const i in behavior) {
+          const behaviorEx = new allBehavior[i]()
+          if (behavior[i].argu) {
+            // eslint-disable-next-line prefer-spread
+            behaviorEx.setArguments && behaviorEx.setArguments.apply(behaviorEx, behavior[i].argu)
+          }
+
+          bm.addBehavior(behaviorEx)
+        }
+      }
       tower.setUserData("towerName", towerData.role)
       this.upCall && this.upCall(e, true, tower)
     }
