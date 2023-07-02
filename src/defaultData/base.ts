@@ -792,6 +792,11 @@ export default {
     },
     {
       role: "pys_nun",
+      behavior: {
+        "AutoMissileBehavior": {
+          argu: [1000]
+        }
+      },
       level: [
         {
           hurt: 60,

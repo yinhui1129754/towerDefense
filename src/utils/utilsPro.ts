@@ -52,14 +52,17 @@ Texture.fromLoader = <R extends Resource = Resource>(source: HTMLImageElement|HT
   BaseTexture.addToCache(texture.baseTexture, name)
   Texture.addToCache(texture, name)
   const m = Main.getMain()
-  const sc = m.getNowScene()
-  if (sc && sc.useBufRes) {
-    sc.bufRes.push({
-      type: SOURCE_TYPE.IMG,
-      key: name,
-      url: imageUrl
-    })
+  if (m) {
+    const sc = m.getNowScene()
+    if (sc && sc.useBufRes) {
+      sc.bufRes.push({
+        type: SOURCE_TYPE.IMG,
+        key: name,
+        url: imageUrl
+      })
+    }
   }
+
   // also add references by url if they are different.
   // if (name !== imageUrl)
   // {

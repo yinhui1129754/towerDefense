@@ -72,7 +72,7 @@ export class Bullet extends SportBase {
       this.hurtRoleIds = []
     }
   }
-
+  _userCenter:boolean
   /**
    * 被伤害角色id的数组
    */
@@ -99,6 +99,7 @@ export class Bullet extends SportBase {
     this.trackMoveType = BULLET_MOVE_TYPE.BEZIER
     this.isHurtTarget = false
     this.isHurtDestroy = true
+    this._userCenter = false
   }
 
   /**
@@ -152,11 +153,14 @@ export class Bullet extends SportBase {
    */
   protected _moveTypeBezier() {
     const dis = userUtilsPro.pointsDis(this.start, this.end)
-    const c = userUtilsPro.bezierMidPoint(this.start, this.end, userUtilsPro.PI3, Math.round(dis / 4))
-    this.center = {
-      x: c[0],
-      y: c[1]
+    if (!this._userCenter) {
+      const c = userUtilsPro.bezierMidPoint(this.start, this.end, userUtilsPro.PI3, Math.round(dis / 4))
+      this.center = {
+        x: c[0],
+        y: c[1]
+      }
     }
+
     this.tMult = this.speed / userUtilsPro.getCurveLenght(this.start, this.center, this.end)
   }
 

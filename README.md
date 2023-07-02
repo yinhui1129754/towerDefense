@@ -96,6 +96,7 @@ npm run dev
 [(6)游戏资源打包逻辑](https://blog.csdn.net/baidu_38766085/article/details/131262775)  
 [(7)plist在pixi.js中的使用](https://blog.csdn.net/baidu_38766085/article/details/131295867)  
 [(8)发射圆圈子弹技能](https://blog.csdn.net/baidu_38766085/article/details/131386028)  
+[(9)发射多炮弹技能](https://blog.csdn.net/baidu_38766085/article/details/131504424)  
 ## 运行效果截图
 ![项目运行效果截图](https://github.com/yinhui1129754/towerDefense/blob/main/mdImg/test2.gif?raw=true)  
 ![项目运行效果截图](https://github.com/yinhui1129754/towerDefense/blob/main/mdImg/2.png?raw=true) 

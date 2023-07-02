@@ -292,6 +292,74 @@ export class AutoArcFireBehavior extends BehaviorTree {
                 Main.getMain().getNowScene().addGameObject(b)
               }
             }
+            break
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 自动发导弹行为
+ */
+export class AutoMissileBehavior extends BehaviorTree {
+  constructor(interval = 3000) {
+    super(interval)
+  }
+  intervalCall(beHaviorData: BEHAVIORDATA, gameObject: GameObject) {
+    const p = gameObject as Role
+    // const sbRect = Main.getMain().getNowScene().getSbRect()
+    if (p.state === GAMEOBJECT_STATE.LIVEING && (p.behaviorState === BEHAVIOR_STATE.FIGHT || p.behaviorState === BEHAVIOR_STATE.STATIC)) {
+      if (p.parent) {
+        const arrs = p.parent.quadtree.retrieveArc(p, p.endHurtDistance)
+        for (let i = 0; i < arrs.length; i++) {
+          const cr = arrs[i]
+          if (cr.classType === GAMEOBJECT_TYPE.NPC ||
+            cr.classType === GAMEOBJECT_TYPE.ENEMY) {
+            const p2 = p.parent.getGameObjectById(cr.id) as Role
+            const bulletName = "zd_paodan1"
+            // 发射子弹数量
+            let bulletNumber = 6
+            // 开始点根据绑定单位的坐标获取
+            const startPoint = { x: p.x, y: p.y }
+            const f = function() {
+              Main.setTimeoutGame(function() {
+                bulletNumber--
+                const count = userUtilsPro.randIntBetween(1, 3)
+                for (let i = 0; i < count; i++) {
+                  if (bulletNumber >= 0) {
+                    const end = { x: p2.x, y: p2.y }
+                    // 创建子弹对象
+                    const b = Bullet.create(bulletName, startPoint, end, BULLET_MOVE_TYPE.BEZIER) as Bullet
+                    // 计算两点间的距离
+                    const dis = userUtilsPro.pointsDis(startPoint, end)
+                    // 随机方向
+                    const fx = userUtilsPro.randIntBetween(0, 1) === 0 ? 1 : -1
+                    // 中点计算随机位置
+                    // 中点随机角度
+                    const c = userUtilsPro.bezierMidPoint(startPoint, end, Math.PI * userUtilsPro.randBetween(0, 2), fx * Math.round(dis) * userUtilsPro.randBetween(0.5, 1.5))
+                    b._userCenter = true
+                    b.center = {
+                      x: c[0],
+                      y: c[1]
+                    }
+                    // 随机速度
+                    b.setSpeed(2.6 + 4 * userUtilsPro.randBetween(0.1, 1))
+                    // 子弹的创建单位
+                    b.use = p.id
+                    // 添加子弹到场景
+                    Main.getMain().getNowScene().addGameObject(b)
+                  }
+                }
+                if (bulletNumber >= 0) {
+                  f()
+                }
+                // const end = {x:cr.x}
+              }, 100)
+            }
+            f()
+            break
           }
         }
       }
@@ -520,7 +588,8 @@ export const allBehavior = {
   EscapeBehavior, // 逃跑行为
   AutoFindEnemyBehavior, // 自动寻找敌人行为
   FightJudgeBehavior1, // 战斗行为1
-  AutoArcFireBehavior
+  AutoArcFireBehavior,
+  AutoMissileBehavior
 }
 
 /**
